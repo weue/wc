@@ -1,0 +1,154 @@
+/* gis */
+
+.gisbox {
+  height: 442px;
+  margin-bottom: 20px;
+}
+
+#gis .hd h3 a {
+  padding-left: 45px;
+  background: url(../images/iconSmall.png) no-repeat 14px -1412px;
+}
+
+.container .map {
+  width: 840px;
+  height: 440px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.container .selectArea {
+  float: right;
+  /* background-color: red; */
+  width: 295px;
+}
+
+.container .placeSelectTip {
+  width: 100%;
+  height: 62px;
+  line-height: 42px;
+  color: #178A61;
+  font-size: 18px;
+}
+
+.container label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container select {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 34px;
+}
+
+.container button {
+  width: 100%;
+  height: 40px;
+  background-color: #EBEBEB;
+  border: 1px solid #999999;
+}
+
+/* 特色蜂场 */
+
+.tsfc {
+  width: 842px;
+  float: left;
+}
+
+#tsfc .hd h3 a {
+  padding-left: 45px;
+  background: url(../images/iconSmall.png) no-repeat 14px -800px;
+}
+
+.tsfc .fcimgbox {
+  height: 538px;
+  border: 1px solid #ccc;
+  padding: 7px 15px;
+}
+
+.tsfc .fcimgbox .imgitem {
+  position: relative;
+  float: left;
+  width: 31.6%;
+  overflow: hidden;
+  margin: 7px;
+  /* height: 222px; */
+}
+
+.tsfc .fcimgbox .imgitem img {
+  width: 100%;
+  height: 254px;
+  vertical-align: middle;
+}
+
+.tsfc .fcimgbox .imgitem .title {
+  height: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  letter-spacing: 4px;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.tsfc .fcimgbox .imgitem a {
+  color: #FFF;
+}
+
+.tsfc .fcimgbox .imgitem a:hover {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.tsfc .fcimgbox .imgitem .title a:hover {
+  color: #ff0;
+}
+
+.tsfc .fcimgbox .bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 60px;
+  background-color: #000;
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+}
+
+/* 最新添加 */
+
+.zxtj {
+  width: 295px;
+  float: right;
+}
+
+.zxtj .itembox {
+  border: 1px solid #ccc;
+}
+
+.zxtj .itembox ul {
+  margin: 18px 18px;
+  overflow: hidden;
+  width: 259px;
+  height: 515px;
+}
+
+.zxtj .itembox li {
+  height: 42px;
+  line-height: 42px;
+  background-position: 0 -1726px;
+}
+
+.zxtj .itembox a {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}

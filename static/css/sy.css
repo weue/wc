@@ -1,0 +1,86 @@
+#sycx .hd h3 a {
+  padding-left: 45px;
+  background: url(../images/iconSmall.png) no-repeat 14px -950px;
+}
+
+.sycxbox {
+  height: 442px;
+}
+
+.sycxbox #code {
+  float: left;
+  border: 1px solid #999999;
+  width: 572px;
+  height: 419px;
+}
+
+.sycxbox .inputbox {
+  position: relative;
+  width: 100%;
+}
+
+.sycxbox .input {
+  width: 552px;
+  height: 60px;
+  border: none;
+  border-bottom: 1px solid #999999;
+  padding-left: 10px;
+}
+
+.sycxbox .search {
+  background: url(../images/iconSmall.png) no-repeat center -1595px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 8px;
+  right: 10px;
+  z-index: 99;
+}
+
+.sycxbox .mainbutton {
+  text-align: center;
+  margin-left: 65px;
+}
+
+.sycxbox .button {
+  /* display: inline-block; */
+  border: 1px solid #ccc;
+  float: left;
+  font-size: 25px;
+  color: #646464;
+  margin-top: 31px;
+  margin-right: 48px;
+  padding: 0px;
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  line-height: 72px;
+  -moz-user-select: none;
+  /*火狐*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -ms-user-select: none;
+  /*IE10*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  user-select: none;
+}
+
+.sycxbox .button:hover {
+  border-color: #178A62;
+}
+
+.sycxbox .syct {
+  float: right;
+  width: 565px;
+  height: 421px;
+}
+
+#syzn .hd h3 a {
+  padding-left: 45px;
+  background: url(../images/iconSmall.png) no-repeat 14px -900px;
+}
+
+.syzn {
+  height: 475px;
+}

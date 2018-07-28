@@ -1,0 +1,339 @@
+﻿@charset "utf-8";
+.row{ overflow: hidden; margin-bottom: 20px;}
+.mainContent{ overflow:hidden;}
+
+/* 办事列表 */
+.bsList{margin: 0 -5px;overflow: hidden;}
+.bsList li{width: 24.99%;margin-bottom: 8px;float: left;_display: inline;}
+.bsList li a{display: block;margin: 0 5px;height: 36px;line-height: 36px;text-align: center;border: 1px solid #eee;overflow: hidden;-webkit-transition: 400ms;-o-transition: 400ms;-moz-transition: 400ms;transition: 400ms;}
+.bsList li a:hover{ background-color:#f3f3f3; border-color: #2279c4; font-weight: bold;}
+
+
+/* 图标按钮 */
+.grbsList{ overflow: hidden; margin-right: -20px;}
+.grbsList li{ float: left; margin: 0 10px 10px 0;}
+.grbsList a{ display: block; width: 105px; border: 1px solid #EEEEEE; height:70px; line-height: 17px; padding: 0 0 5px 0; text-align: center; background: #F8F8F8; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; overflow:hidden;}
+.grbsList a i{ display: block; height: 46px; -webkit-transition: 400ms;-o-transition: 400ms;-moz-transition: 400ms;transition: 400ms;}
+.grbsList a:hover{ text-decoration: none; background-color: #faf7f7; border-color: #f1e8e8; color: #2279c4}
+
+/* 服务-首页 ----------------------------------- */
+#service-rowA .side,#service-rowB .side{ width: 350px; float: right; margin: 0 0 0 20px;}
+.fwTab{ overflow: hidden; height: 322px;}
+.fwTab .fHd{ width: 160px; float: left; padding-right: 20px;}
+.fwTab .fHd li{ margin-bottom:1px;}
+.fwTab .fHd a{ display: block; height: 79px; line-height: 79px; background: #F8F8F8; text-align:center;  font-size: 18px; position: relative;}
+.fwTab .fHd a:hover{ text-decoration: none; color: #333}
+.fwTab .fHd .on a{ background: #2279c4; color: #fff;}
+.fwTab .fHd .on s{ position: absolute; right: -14px; top: 50%; margin-top: -7px; border-color: transparent; border-style: dashed; border-width: 7px; border-left-color: #2279c4; border-left-style: solid; content: ""; display: block; font-size: 0; line-height: 0; width: 0;}
+.fwTab .fBd{ overflow: hidden; zoom: 1;}
+.fwTab .fBd .bd{ padding: 10px 0 0;}
+.grbsList li{ margin: 0 20px 13px 0}
+.grbsList li.li12,
+.grbsList li.li13,
+.grbsList li.li14,
+.grbsList li.li15,
+.grbsList li.li16,
+.grbsList li.li17,
+.grbsList li.li18,
+.grbsList li.li19,
+.grbsList li.li20,
+.grbsList li.li21,
+.grbsList li.li22,
+.grbsList li.li23,
+.grbsList li.li24,
+.grbsList li.li25,
+.grbsList li.li26{display: none;}
+.fwTab .grbsList a{ width: 135px; padding: 10px 0 16px 0;}
+.fwTab .fwsxIcons a:hover{ background: #f5f2df; color: #B9B286; border-color: #e4e0c9}
+.fwTab .lxbsIcons .li-gsdj a{ width: 227px;}
+.fwTab .lxbsIcons .li-sczt a{ width: 230px;}
+#spsx .grbsList li{ margin: 0 20px 13px 0;}
+#spsx .grbsList a i{ margin: 0;}
+#spsx .bmbsList li{ width: 25%;}
+#spsx .bmbsList{ height: 270px;}
+
+/* 省平台政民互动 */
+#sptZmhd { margin:0;}
+#sptZmhd .bd{ overflow:hidden;}
+#sptZmhd .bd li{ margin-bottom:14px; padding-top:15px; text-align:center; padding-left:90px; height:65px; background: url(../images/sptbg.png) no-repeat ;}
+#sptZmhd .bd li a{ color:#5daebd; font-size:18px;}
+#sptZmhd .bd li.li2{ background-position:0 -92px;}
+#sptZmhd .bd li.li2 a{ color:#bba354;}
+#sptZmhd .bd li.li3{ margin:0; background-position:0 -183px;}
+#sptZmhd .bd li.li3 a{ color:#71b691; font-size:18px;}
+
+/* bjBox */
+.bjBox .hd{ height: 46px; position: relative; text-align: center;}
+.bjBox .hd h3{ display: inline-block; *display: inline; zoom: 1; font-size: 18px; font-weight: bold; color: #2279c4; background: url(../images/fw-icons.png) 17px -98px no-repeat; padding: 0 20px 0 50px; height: 44px; line-height: 44px; position: relative;}
+.bjBox .bd{ padding: 0; overflow: hidden;}
+
+/* bjTable */
+.tableSlide{ height: 196px; overflow: hidden; position: relative;}
+.bjTable{ width: 100%;}
+.bjTable th,.bjTable td{ border: 1px solid #eee; padding: 5px; text-align: center;}
+.bjTable td.name{ text-align: left; padding-left: 20px;}
+.bjTable th{ background: #EEF5FF; font-weight: bold; color: #2279c4}
+.bjTable .num{ width: 250px;}
+.bjTable .dept{ width: 200px;}
+.bjTable .state{ width: 100px;}
+#bjtj{ background-color:#f3f3f3; border: 1px solid #eee; padding: 21px;}
+#bjtj .hd { float:left;}
+#bjtj .hd h3{ line-height:36px; background-position: 17px 12px;}
+.bjcxTable{ width: 100%; font-size: 12px;}
+.bjcxTable td{ padding: 5px 0;}
+.bjcxTable .label{ width: 85px; text-align: right;}
+.bjcxTable input{ width: 130px; padding: 5px; height: 22px; line-height: 22px; border: 1px solid #eee;}
+.bjcxTable .submitBtn{ height: 36px; border: 0; background: #2279c4; color: #fff; font-size: 14px; width: 100px;}
+
+/* 民生服务图标组 */
+.fwTab .msfwIcons li a{background-image: url(../images/icons-nav-nslyfw.png);background-repeat:no-repeat }
+.fwTab .msfwIcons li.li1 a{background-position: center 13px;}
+.fwTab .msfwIcons li.li2 a{background-position: center -169px;}
+.fwTab .msfwIcons li.li3 a{background-position: center -351px;}
+.fwTab .msfwIcons li.li4 a{background-position: center -536px;}
+.fwTab .msfwIcons li.li5 a{background-position: center -719px;}
+.fwTab .msfwIcons li.li6 a{background-position: center -900px;}
+.fwTab .msfwIcons li.li7 a{background-position: center -1084px;}
+.fwTab .msfwIcons li.li8 a{background-position: center -1266px;}
+.fwTab .msfwIcons li.li9 a{background-position: center -1447px;}
+.fwTab .msfwIcons li.li10 a{background-position: center -900px;}
+.fwTab .msfwIcons li.li11 a{background-position: center -900px;}
+.fwTab .msfwIcons li.li12 a{background-position: center -900px;}
+
+/* 重点服务图标组 */
+.zdfwIcons i{ background: url(../images/zdfw-icons.png) center -22px no-repeat;}
+.zdfwIcons a:hover i, .zdfwIcons .on a i{ background-position: center -122px;}
+.zdfwIcons .li2 i{ background-position: center -222px;}
+.zdfwIcons .li3 i{ background-position: center -422px;}
+.zdfwIcons .li4 i{ background-position: center -622px;}
+.zdfwIcons .li6 i{ background-position: center -822px;}
+.zdfwIcons .li5 i{ background-position: center -1022px;}
+.zdfwIcons .li7 i{ background-position: center -1222px;}
+.zdfwIcons .li9 i{ background-position: center -1422px;}
+.zdfwIcons .li8 i{ background-position: center -1622px;}
+.zdfwIcons .li10 i{ background-position: center -1822px;}
+.zdfwIcons .li2 a:hover i, .zdfwIcons .li2.on a i{ background-position: center -322px;}
+.zdfwIcons .li3 a:hover i, .zdfwIcons .li3.on a i{ background-position: center -522px;}
+.zdfwIcons .li4 a:hover i, .zdfwIcons .li4.on a i{ background-position: center -722px;}
+.zdfwIcons .li6 a:hover i, .zdfwIcons .li6.on a i{ background-position: center -922px;}
+.zdfwIcons .li5 a:hover i, .zdfwIcons .li5.on a i{ background-position: center -1122px;}
+.zdfwIcons .li7 a:hover i, .zdfwIcons .li7.on a i{ background-position: center -1322px;}
+.zdfwIcons .li9 a:hover i, .zdfwIcons .li9.on a i{ background-position: center -1522px;}
+.zdfwIcons .li8 a:hover i, .zdfwIcons .li8.on a i{ background-position: center -1722px;}
+.zdfwIcons .li10 a:hover i, .zdfwIcons .li10.on a i{ background-position: center -1922px;}
+
+/* 查询中心 */
+
+#service-rowB li{ float: left; width: 370px; height: 130px; margin-right: 30px; background: url(../images/fw-wyts.jpg) no-repeat; position: relative;}
+#service-rowB .li3{ margin-right: 0;}
+#service-rowB .btn{ display: block; width: 130px; text-align: center; height: 35px; line-height: 35px; position: absolute; right: 39px; top: 25px; color: #3069b8; -webkit-transition: 400ms;-o-transition: 400ms;-moz-transition: 400ms;transition: 400ms;}
+#service-rowB .btn:hover{ text-decoration: none; font-size: 16px;}
+#service-rowB p{ position: absolute; right: 20px; top: 84px; color: #3069b8}
+#service-rowB .li2{ background-position: -401px 0;}
+#service-rowB .li2 .btn, #service-rowB .li2 p{ color: #7E6E3D}
+#service-rowB .li3{ background-position: right 0;}
+#service-rowB .li3 .btn, #service-rowB .li3 p{ color: #48A371}
+#service-rowC{ margin:0;}
+#service-rowC #sptTzgg{ width: 540px; float: left; margin-right: 20px;}
+#service-rowC #sptTzgg .hd{ margin-bottom: 5px;}
+#service-rowC #rdfw{ overflow: hidden;}
+#rdfw .bd .rdfwList{ overflow: hidden; margin-right: -20px;}
+#rdfw .bd .rdfwList li{ float: left; width: 140px; margin: 15px 13px 0 0;}
+#rdfw .bd .rdfwList li a{ display:table-cell; vertical-align:middle; width:77px; height: 62px; line-height: 20px; padding:0 0 0 60px; *display: block; *height:52px; *padding-top:10px; border: 1px solid #E8E8E8; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; position: relative;}
+#rdfw .bd .rdfwList li i{ display: block; width: 50px; height: 36px; position: absolute; left: 0; top: 13px; border-right: 1px solid #E8E8E8; background: url(../images/fw-rdfw.png) center -32px no-repeat;}
+#rdfw .bd .rdfwList .li2 i{ background-position: center -132px}
+#rdfw .bd .rdfwList .li3 i{ background-position: center -232px}
+#rdfw .bd .rdfwList .li4 i{ background-position: center -332px}
+#rdfw .bd .rdfwList .li5 i{ background-position: center -432px}
+#rdfw .bd .rdfwList .li6 i{ background-position: center -532px}
+#rdfw .bd .rdfwList .li7 i{ background-position: center -632px}
+#rdfw .bd .rdfwList .li8 i{ background-position: center -732px}
+#rdfw .bd .rdfwList li a:hover{ background-color: #faf7f7; text-decoration: none; color: #2279c4; border-color: #f1e8e8}
+#rdfw .bd{height: 160px;overflow:hidden; position:relative}
+#rdfw .bd .infoList{overflow:hidden; height:144px; position:relative;}
+#rdfw .bd .infoList li {/*float: left;width: 133px;overflow: hidden;*/}
+#rdfw .bd .infoList li  a{display: block; white-space: nowrap; text-overflow: ellipsis;}
+/* 服务-父列表页 ----------------------------------- */
+.fwsxList{ margin-bottom: 20px; border: 1px solid #eee; padding: 10px 0; position: relative; overflow: visible;}
+.fwsxList i{}
+.fwsxList .on{ background: #F5AA4E !important; border-right: 0; width: 135px; margin: -11px 0 -11px -1px !important; height: 98px; position: relative;}
+.fwsxList .on a{ color: #fff;}
+.fwsxList .on s{ border-color: transparent; border-style: dashed; border-width: 8px; border-top-color: #F5AA4E; border-top-style: solid; content: ""; display: block; font-size: 0; line-height: 0; width: 0; position: absolute; left: 50%; margin-left: -8px; bottom: -16px;}
+.fwsxList li:hover{ margin: -11px 0 -11px 0; height: 98px; background: #fdb762;}
+.fwsxList li:hover i{ margin: 10px 0 0 0;}
+.fwsxList a:hover{ color: #fff;}
+.fwsxList .on i{ margin: 10px 0 0 0;}
+.fwLoop{ width: 570px; float: left;}
+.fwLoop .infoList{ overflow: hidden; margin-right: -20px;}
+.fwLoop .infoList li{ width: 260px; margin-right: 20px; float: left;}
+.fwLoop .boxB .hd h3{ border-color: #F5AA4C; font-size: 16px;}
+.fwLoop .boxB .hd h3 a{ color: #F5AA4C;}
+.sideRight{ width: 270px; float: right; padding: 10px 15px; background: #F4F6FA}
+.sideRight .news-sideBox h3{ font-size: 16px; padding-left: 25px; background: url(../images/fw-icons.png) 0 -277px no-repeat;}
+#cjwt h3{ background-position: 0 -362px;}
+#hdjl h3{ background-position: 0 -459px;}
+
+/* 审批事项-列表页 ----------------------------------- */
+
+/* 部门办事侧栏 */
+.sideType2{ width: 259px;}
+.sideType2 .singleList{ overflow: hidden; padding-left: 1px;}
+.sideType2 .sideMenu .singleList li{ float: left; width: 128px; margin-left: -1px; font-size: 14px;}
+.sideType2 .sideMenu .singleList a{ padding: 8px 0; background-image: none}
+.sideType2 .sideMenu .singleList .lz-ScGsc-Org-2008-46, .sideType2 .sideMenu .singleList .lz-ScGsc-Org-2008-47{ width: 257px;}
+.approveList dd{ border-bottom: 1px dashed #d0d0d0; padding: 15px 0; overflow: hidden;}
+.approveList .title{ float: left; width: 67%;}
+.approveList h1{ font-size: 16px; line-height: 24px; font-weight: normal; margin-left: 25px;}
+.approveList img{ vertical-align: middle; margin-left: 5px;}
+.approveList h2{ font-size: 14px; font-weight: normal; color: #888888; margin-left: 25px;}
+.approveList .yu{ display: inline-block; width: 17px; height: 17px; background: url(../images/icons.png) 0 -40px no-repeat; vertical-align: middle; margin-left: 10px;}
+.approveList .ja{ float: left; display: block; width: 20px; height: 20px; margin: 3px 0 0 0; background: url(../images/icons.png) no-repeat;}
+.approveList .jian{ background-position: 0 -20px;}
+.approveList .level{ margin-left: 25px;}
+.approveList .level .title{ margin-top: 15px; float: left; width: 68%; line-height: 24px;}
+.approveList .level3 .title h1{ font-size: 14px; font-weight: normal; margin-left: 26px;}
+.approveList .level2 .title h1{ font-size: 14px; font-weight: normal; margin-left: 26px;}
+.approveList .btns{ float: right;}
+.approveList .btns ul{ list-style: none; float: right; padding: 0;}
+.approveList .btns ul li{ margin-left: 10px; float: left;}
+.approveList .btns ul a{ width: 60px; height: 28px; display: block; line-height: 28px; text-align: center; color: #fff; background: #7EADE1; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+.approveList .btns ul a:hover{ background: #2279c4; text-decoration: none}
+
+/* 审批事项-内容页 ----------------------------------- */
+.approveDetail{ padding: 0 20px; position: relative;}
+.approveDetail .title{ text-align: center; font-size: 30px; color: #3069B8; margin-bottom: 20px;}
+.approveDetail .detail{ margin-bottom: 20px;}
+.approveDetail .detail td{ border: 1px solid #E1EBF4; padding: 5px 10px;}
+.approveDetail .detail .label{ width: 10%; background: #F2F7FC; text-align: right;}
+.approveDetail .btns{ text-align: center; margin-bottom: 20px; font-size: 0;}
+.approveDetail .btns li{ margin: 0 60px; display: inline-block; *display: inline; zoom: 1; height: 40px; text-align: left; line-height: 40px; color: #fff; font-size: 16px;}
+.approveDetail .btns a{ display: inline-block; *display: inline; zoom: 1; width: 58px; color: #fff; padding-left: 50px; background: url(../images/icons.png) 25px -72px #00508F no-repeat; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.approveDetail .btns .li2 a{ background-position: 25px -136px}
+.approveDetail .btns .li3 a{ background-position: 24px -328px}
+.approveDetail .btns .li4 a{ background-position: 25px -188px}
+.approveDetail .btns a:hover{ background-color: #045ea5; text-decoration: none;}
+.approveDetail .detailSlide .hd{ height: 44px; line-height: 44px; background: #F2F7FC; overflow: hidden; padding: 0 20px;}
+.approveDetail .detailSlide .hd li{ float: left; font-size: 16px; padding: 0 40px; color: #3069B8; cursor: pointer;}
+.approveDetail .detailSlide .hd .on{ border: 1px solid #E1EBF4; background: #fff; border-top: 3px solid #3069B8; line-height: 40px; height: 45px;}
+.approveDetail .detailSlide .bd{ padding: 20px;}
+.yjclTable td, .yjclTable th{ border: 1px solid #ddd; text-align: center; padding: 5px;}
+.yjclTable th{ background: #f2f2f2; padding: 10px 5px; font-weight: bold;}
+.yjclTable img{ vertical-align: middle;}
+.yjclTable .name{ text-align: left;}
+.yjclTable a{ color: #3069B8}
+.yjclTable .yj{ width: 50%}
+
+/* popBox */
+.popBox{ display: none; width: 50%; position: absolute; top: 30%; left: 25%; background: #fff; border: 1px solid #ccc; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0px 0 10px rgba(0, 0, 0, .3); -moz-box-shadow: 0px 0 10px rgba(0, 0, 0, .3); box-shadow: 0px 0 10px rgba(0, 0, 0, .3);}
+.popBox .hd{ border-bottom: 1px solid #ccc; overflow: hidden; padding: 10px 10px 10px 20px;}
+.popBox .hd h3{ font-weight: bold;}
+.popBox .hd .close{ float: right; width: 28px; height: 28px; display: block; background: url(../images/icons.png) 8px -258px no-repeat; cursor: pointer;}
+.popBox .bd{ padding: 20px; height: 200px; overflow-y: scroll;}
+.downTable td, .downTable th{ border: 1px solid #D8E0E6; padding: 5px; text-align: center; font-size: 12px;}
+.downTable th{ background: #F2F7FC; font-weight: bold;}
+.downTable a{ color: #3069B8;}
+
+/* 婚育收养 ----------------------------------- */
+#hysy-Bszn .infoList{ overflow: hidden}
+#hysy-Bszn .infoList li{ float: left; width: 430px;}
+#hysy-Dffw .infoList{ overflow: hidden}
+#hysy-Dffw .infoList li{ float: left; width: 32%; margin-bottom: 5px;}
+
+/* 信用信息查询平台 */
+.xxcxpt .list{ overflow: hidden; padding: 20px 0;}
+.xxcxpt .list li{ width: 500px; float: left; _display: inline; overflow: hidden; margin: 35px 42px 0 42px;}
+.xxcxpt .list a{ display: block; height: 55px; line-height: 55px; background: #F4F4F4; border: 1px dotted #ccc; position: relative; font-size: 18px; font-weight: bold; color: #2279c4; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-transition: 400ms;-o-transition: 400ms;-moz-transition: 400ms;transition: 400ms;}
+.xxcxpt .list i{ display: inline-block; *display: inline; zoom: 1; vertical-align: middle; width: 18px; height: 18px; background: #fff; margin: 0 20px 0 30px; border: 1px solid #ddd; -webkit-border-radius: 18px; -moz-border-radius: 18px; border-radius: 18px;}
+.xxcxpt .list a:hover{ background: #2279c4; color: #fff; text-decoration: none; border: 1px solid #2279c4}
+
+/* 个人办事图标组 */
+.grbsIcons i{ background: url(../images/ind-service-grbs.png) center -2222px no-repeat;}
+.grbsIcons a:hover i{ background-position: center -2322px;}
+.grbsIcons .li1 i{ background-position: center -22px;}
+.grbsIcons .li2 i{ background-position: center -222px;}
+.grbsIcons .li3 i{ background-position: center -422px;}
+.grbsIcons .li4 i{ background-position: center -622px;}
+.grbsIcons .li5 i{ background-position: center -822px;}
+.grbsIcons .li6 i{ background-position: center -1022px;}
+.grbsIcons .li7 i{ background-position: center -1222px;}
+.grbsIcons .li8 i{ background-position: center -1422px;}
+.grbsIcons .li9 i{ background-position: center -1622px;}
+.grbsIcons .li10 i{ background-position: center -1822px;}
+.grbsIcons .li11 i{ background-position: center -2022px;}
+.grbsIcons .li12 i{ background-position: center -2222px;}
+.grbsIcons .li1 a:hover i{ background-position: center -122px;}
+.grbsIcons .li2 a:hover i{ background-position: center -322px;}
+.grbsIcons .li3 a:hover i{ background-position: center -522px;}
+.grbsIcons .li4 a:hover i{ background-position: center -722px;}
+.grbsIcons .li5 a:hover i{ background-position: center -922px;}
+.grbsIcons .li6 a:hover i{ background-position: center -1122px;}
+.grbsIcons .li7 a:hover i{ background-position: center -1322px;}
+.grbsIcons .li8 a:hover i{ background-position: center -1522px;}
+.grbsIcons .li9 a:hover i{ background-position: center -1722px;}
+.grbsIcons .li10 a:hover i{ background-position: center -1922px;}
+.grbsIcons .li11 a:hover i{ background-position: center -2122px;}
+.grbsIcons .li12 a:hover i{ background-position: center -2322px;}
+.grbsIcons .li13 i{ background-position: center -622px}
+.grbsIcons .li14 i{ background-position: center -1822px}
+.grbsIcons .li15 i{ background-position: center -422px}
+.grbsIcons .li13 a:hover i{ background-position: center -722px}
+.grbsIcons .li14 a:hover i{ background-position: center -1922px}
+.grbsIcons .li15 a:hover i{ background-position: center -522px}
+
+/* 企业办事图标组 */
+.qybsIcons i{ background: url(../images/ind-service-qybs.png) center -22px no-repeat;}
+.qybsIcons a:hover i{ background-position: center -122px;}
+.qybsIcons .li2 i{ background-position: center -222px;}
+.qybsIcons .li3 i{ background-position: center -422px;}
+.qybsIcons .li4 i{ background-position: center -622px;}
+.qybsIcons .li5 i{ background-position: center -1022px;}
+.qybsIcons .li6 i{ background-position: center -822px;}
+.qybsIcons .li7 i{ background-position: center -1222px;}
+.qybsIcons .li8 i{ background-position: center -1422px;}
+.qybsIcons .li9 i{ background-position: center -1622px;}
+.qybsIcons .li10 i{ background-position: center -1822px;}
+.qybsIcons .li11 i{ background-position: center -2022px;}
+.qybsIcons .li12 i{ background-position: center -2222px;}
+.qybsIcons .li2 a:hover i{ background-position: center -322px;}
+.qybsIcons .li3 a:hover i{ background-position: center -422px;}
+.qybsIcons .li4 a:hover i{ background-position: center -722px;}
+.qybsIcons .li5 a:hover i{ background-position: center -1122px;}
+.qybsIcons .li6 a:hover i{ background-position: center -922px;}
+.qybsIcons .li7 a:hover i{ background-position: center -1322px;}
+.qybsIcons .li8 a:hover i{ background-position: center -1522px;}
+.qybsIcons .li9 a:hover i{ background-position: center -1722px;}
+.qybsIcons .li10 a:hover i{ background-position: center -1922px;}
+.qybsIcons .li11 a:hover i{ background-position: center -2122px;}
+.qybsIcons .li12 a:hover i{ background-position: center -2322px;}
+.qybsIcons .li13 i{ background-position: center -1222px}
+.qybsIcons .li14 i{ background-position: center -622px}
+.qybsIcons .li15 i{ background-position: center -822px}
+.qybsIcons .li_gd i{ background-position: center -2222px}
+.qybsIcons .li13 a:hover i{ background-position: center -1322px}
+.qybsIcons .li14 a:hover i{ background-position: center -722px}
+.qybsIcons .li15 a:hover i{ background-position: center -922px}
+.qybsIcons .li_gd a:hover i{ background-position: center -2322px}
+
+/* 类型办事 */
+.lxbsIcons li i{ background: url(../images/ind-service-lxbs.png) center -25px no-repeat;}
+.lxbsIcons .li2 i{ background-position: center -225px;}
+.lxbsIcons .li3 i{ background-position: center -425px;}
+.lxbsIcons .li4 i{ background-position: center -625px;}
+.lxbsIcons .li5 i{ background-position: center -825px;}
+.lxbsIcons .li6 i{ background-position: center -1025px;}
+.lxbsIcons .li7 i{ background-position: center -1225px;}
+.lxbsIcons .li8 i{ background-position: center -1425px;}
+.lxbsIcons .li1 a:hover i{ background-position: center -125px;}
+.lxbsIcons .li2 a:hover i{ background-position: center -325px;}
+.lxbsIcons .li3 a:hover i{ background-position: center -525px;}
+.lxbsIcons .li4 a:hover i{ background-position: center -725px;}
+.lxbsIcons .li5 a:hover i{ background-position: center -925px;}
+.lxbsIcons .li6 a:hover i{ background-position: center -1125px;}
+.lxbsIcons .li7 a:hover i{ background-position: center -1325px;}
+.lxbsIcons .li8 a:hover i{ background-position: center -1525px;}
+.lxbsIcons .li_tzxm i, .lxbsIcons .li_gsdj i, .lxbsIcons .li_sczt i{ background: url(../images/ind-service-qybs.png) center -222px no-repeat;}
+.lxbsIcons .li_gsdj i{ background-position: center -822px}
+.lxbsIcons .li_sczt i{ background-position: center -1422px}
+.lxbsIcons .li_tzxm a:hover i{ background-position: center -322px}
+.lxbsIcons .li_sczt a:hover i{ background-position: center -1522px}
+.lxbsIcons .li_gsdj a:hover i{ background-position: center -922px}

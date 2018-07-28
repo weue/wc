@@ -1,0 +1,117 @@
+.sideBox {
+  width: 300px;
+  float: left;
+  overflow: hidden;
+}
+
+.sideBox .hd {
+  height: 36px;
+  line-height: 36px;
+  background-color: #178A62;
+}
+
+.sideBox .hd h3 {
+  padding-left: 28px;
+  font-size: 16px;
+  color: white;
+}
+
+.sideBox .bd {
+  padding: 8px 20px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  border: 0;
+}
+
+#sideRmph li {
+  padding: 8px 0;
+  overflow: hidden;
+  line-height: 24px;
+  border-bottom: 1px dotted #ccc;
+}
+
+#sideRmph li.last {
+  border-bottom: none;
+}
+
+#sideRmph li .number {
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin: 6px 10px 6px 0;
+  overflow: hidden;
+  line-height: 36px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  background-color: #bdbdbd;
+}
+
+.mainContent {
+  width: 830px;
+  zoom: 1;
+  float: right;
+}
+
+.mainBox .mHd {
+  position: relative;
+  height: 36px;
+  line-height: 36px;
+  background-color: #f3f3f3;
+}
+
+.mainBox .mHd h3, .mainBox .mHd .list .on {
+  width: auto;
+  float: left;
+  padding: 0 26px;
+  font-size: 16px;
+  color: white;
+  background-color: #178A62;
+}
+
+.newsList {
+  margin-top: 20px;
+}
+
+.newsList li {
+  height: 34px;
+  line-height: 34px;
+  overflow: hidden;
+  padding: 0 5px 0 0;
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.newsList .date {
+  float: right;
+  color: #bcbcbc;
+  font-size: 12px;
+}
+
+.newsList li a {
+  padding-left: 15px;
+  background: url(../images/iconSmall.png) no-repeat 0 -1736px;
+}
+
+.newsList .split {
+  height: 13px;
+  margin-bottom: 13px;
+  border-bottom: 1px dashed #e5e5e5;
+  background: none;
+}
+.newsList li {
+  height: 34px;
+  line-height: 34px;
+  overflow: hidden;
+  padding: 0 5px 0 0;
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mainBox .page input {
+  border: 0;
+  height: auto;
+  padding: 0;
+}

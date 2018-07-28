@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="application-name" content="北京市蜂蜜质量安全追溯平台" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="renderer" content="webkit" />
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="SiteName" content="北京市蜂蜜质量安全追溯平台" />
+  <meta name="SiteDomains" content="http://app.beeproducttrace.com" />
+  <meta name="SiteIDCode" content="" />
+  <meta name="keywords" content="北京市蜂蜜,蜂蜜质量安全,质量安全追溯平台" />
+  <meta name="description" content="溯源查询" />
+  <meta name="ColumnName" content="溯源查询" />
+  <meta name="ColumnDescription" content="" />
+  <meta name="ColumnKeywords" content="" />
+  <meta name="ColumnType" content="" />
+
+  <title>溯源查询-北京市蜂蜜质量安全追溯平台</title>
+
+  <link href="static/css/module.css" rel="stylesheet" type="text/css" />
+  <link href="static/css/default.css" rel="stylesheet" type="text/css" />
+
+  <!-- <link href="static/css/index.css" rel="stylesheet" /> -->
+  <link href="static/css/syjg.css" rel="stylesheet" />
+
+  <script src="static/js/jquery-1.11.1.js"></script>
+
+  <script src="static/js/webcommon.js"></script>
+  <script src="static/js/jquery.superslide.js"></script>
+  <script src="static/js/qrcode.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="wrap">
+    <!-- 顶部 -->
+    <div id="topBar" style="background-color: #178A61; opacity: 0.6;">
+      <div class="siteWidth">
+        <ul class="listTool">
+          <li class="phone">
+            <div class="toolBtn">
+              <a href="javascript:;">
+                <em class="icon"></em>手机版</a>
+            </div>
+          </li>
+          <li class="character">
+            <div class="toolBtn">
+              <em class="icon"></em>
+              <a id="ST_translate" onclick="do_simple_to_traditional();">登录</a>
+            </div>
+          </li>
+        </ul>
+        <span class="welcome">欢迎访问北京市蜂蜜质量安全追溯平台！</span>
+      </div>
+    </div>
+    <!-- header S -->
+    <header class="header" id="header">
+
+      <div class="container">
+        <h1 title="北京市蜂蜜质量安全追溯平台" id="logo">
+          <a href="http://www.longmatan.gov.cn">
+            <img src="static/images/logo.png" />
+          </a>
+        </h1>
+        <div class="siteSearchBar" id="searchGroup" id="JS_hideBox1" hideBox>
+          <div class="s-form">
+            <!-- <a class="allSearch " href="/s?ac=a">
+                            <u>溯源APP下载</u>
+                        </a> -->
+            <div class="input-box">
+              <input type="text" class="from-control" id="inputkeyword" placeholder="请输入溯源码" spellcheck="false">
+            </div>
+            <div class="btn-box">
+              <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+              <input type="hidden" id="route" value="s" />
+            </div>
+          </div>
+
+          <!-- <script src="static/js/default-site-search-box.js"></script> -->
+          <script>
+            document.getElementById("inputkeyword").onkeydown = function (e) {
+              e = e || window.event;
+              if (e.keyCode == 13) {
+                gSearch();
+              }
+            };
+
+            function gSearch() {
+              var keyword = document.getElementById('inputkeyword').value;
+              var route = document.getElementById('route').value;
+              if (keyword == '' || keyword == "请输入溯源码") {
+                alert("请输入溯源码");
+              } else if (!/^\d{21}$/.test(keyword)) {
+                alert("请输入正确的溯源码");
+              } else {
+                var siteid = document.getElementById('siteid').value;
+                window.location = '/' + route + '?sid=' + siteid + '&wd=' + encodeURIComponent(keyword);
+              }
+            }
+          </script>
+        </div>
+      </div>
+    </header>
+    <!-- header E -->
+    <nav class="topNav clearfix" id="JS_hideBox2" hideBox>
+      <div class="container">
+        <ul id="mainNav" class="mainNav">
+          <li class="li1" id="li-home">
+            <h3 class="h1">
+              <a class="a1" href='./index.html'>
+                <i></i>首页</a>
+            </h3>
+          </li>
+
+          <li class="li1" id="li-xw">
+            <h3 class="h1">
+              <a class="a1" href="./xw.html">
+                <i></i>新闻动态</a>
+            </h3>
+          </li>
+          <li class="li1" id="li-gis">
+            <h3 class="h1">
+              <a class="a1" href="./gis.html">
+                <i></i>蜂场GIS</a>
+            </h3>
+          </li>
+          <li class="li1 on1" id="li-sy">
+            <h3 class="h1">
+              <a class="a1" href="./sy.html">
+                <i></i>溯源查询</a>
+            </h3>
+          </li>
+          <li class="li1" id="li-zc">
+            <h3 class="h1">
+              <a class="a1" href="./zc.html">
+                <i></i>政策法规</a>
+            </h3>
+          </li>
+          <li class="li1" id="li-tz">
+            <h3 class="h1">
+              <a class="a1" href="./tz.html">
+                <i></i>通知公告</a>
+            </h3>
+          </li>
+          <li class="li1" id="li-gy">
+            <h3 class="h1">
+              <a class="a1" href="./gy.html">
+                <i></i>关于我们</a>
+            </h3>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <!-- content S -->
+    <div id="content">
+      <div class="container">
+        <!-- 位置导航 -->
+        <div class="path">
+          <em>您的位置：</em>
+          <a href="/">首页</a>&gt;
+          <a href="./sy.html">溯源查询</a>&gt;
+          <a href="./syjg.html">查询详情</a>
+        </div>
+
+        <div class="side">
+          <!-- 关于我们 -->
+          <div id="gywm">
+            <div class="hd">
+              <h3>
+                <a href="#">关于我们</a>
+              </h3>
+            </div>
+            <div class="bd">
+              <div class="jgc">
+                <div class="jgcimg">
+                  <img src="./static/images/gis1.png" style="width: 100%; height: 100%">
+                </div>
+                <div class="content">
+                  <h3 class="ccyc">测试加工厂</h3>
+                  <p class="ccyc">法人代表：刘小华</p>
+                  <p class="ccyc">主营产品：蜂蜜</p>
+                  <p class="ccyc">每年产量：100000kg</p>
+                </div>
+              </div>
+              <div class="intro">
+                <p class="ccyc">联系方式：13457890098</p>
+                <p class="ccyc">地址：陕西省长治市长治县刘家村旺星小队98号</p>
+              </div>
+
+            </div>
+          </div>
+          <!-- 工厂介绍 -->
+          <div id="gcjs">
+            <div class="hd">
+              <h3>
+                <a href="#">工厂介绍</a>
+              </h3>
+            </div>
+            <p class="bd">
+              加工厂简介加工厂介绍加工厂自1990年致力于蜂蜜生产与加工，在加工技术与合理保护蜂蜜原滋原味上具有丰富的经验，每年生产的蜂蜜受国家食品安全总局的检测与监督，企业的宗旨为生产健康天然的优质蜂蜜，为中国蜂蜜市场在国际上的地位作出积极的贡献，健康，绿色，是我们的标签。加工厂简介加工厂介绍加工厂自1990年致力于蜂蜜生产与加工，在加工技术与合理保护蜂蜜原滋原味上具有丰富的经验，每年生产的蜂蜜受国家食品安全总局的检测与监督，企业的宗旨为生产健康天然的优质蜂蜜，为中国蜂蜜市场在国际上的地位作出积极的贡献，健康，绿色，是我们的标签。加工厂简介加工厂介绍加工厂自1990年致力于蜂蜜生产与加工，在加工技术与合理保护蜂蜜原滋原味上具有丰富的经验，每年生产的蜂蜜受国家食品安全总局的检测与监督，企业的宗旨为生产健康天然的优质蜂蜜，为中国蜂蜜市场在国际上的地位作出积极的贡献，健康，绿色，是我们的标签。
+            </p>
+          </div>
+
+          <!-- 底部图片 -->
+          <div class="dbtp">
+            <img src="./static/images/dbtp.png" style="width: 100%; height: 100%">
+          </div>
+        </div>
+
+        <!-- 溯源信息 -->
+        <div class="syxx clearfix">
+          <div class="box" id="cpxx">
+            <div class="hd">
+              <ul>
+                <li class="on">
+                  <a href="#">蜂蜜溯源</a>
+                </li>
+                <li class="">
+                  <a href="#">蜂场环境</a>
+                </li>
+              </ul>
+            </div>
+            <div class="bd">
+              <ul class="" style="display: block;">
+                <li>
+                  <div class="cpxxbox">
+                    <div class="cppic">
+                      <img src="./static/images/gis1.png" style="width: 100%; height: 100%">
+                    </div>
+                    <div class="tabBox">
+                      <table class="cpxx" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr class="trTitle">
+                            <td class="tdName">产品名称</td>
+                            <td class="tdCon">槐花蜂蜜</td>
+                          </tr>
+                          <tr class="trTitle">
+                            <td class="tdName">加工厂</td>
+                            <td class="tdCon">冯天顺祥有限责任公司</td>
+                          </tr>
+                          <tr class="trTitle">
+                            <td class="tdName">产品批次</td>
+                            <td class="tdCon">11234582</td>
+                          </tr>
+                          <tr class="trTitle">
+                            <td class="tdName">产地</td>
+                            <td class="tdCon">北京市海淀区中关村南大街12号</td>
+                          </tr>
+                          <tr class="trTitle">
+                            <td class="tdName">特点</td>
+                            <td class="tdCon">
+                              椴树蜜，是蜜蜂由椴树花酿的蜜，是蜜蜂由椴树花酿的蜜，是我国东北特有蜜种。椴树蜜，是蜜蜂由椴树花酿的蜜，是蜜蜂由椴树花酿的蜜，是我国东北特有蜜种。椴树蜜，是蜜蜂由椴树花酿的蜜，是蜜蜂由椴树花酿的蜜，是我国东北特有蜜种。椴树蜜，是蜜蜂由椴树花酿的蜜，是蜜蜂由椴树花酿的蜜，是我国东北特有蜜种。
+                              其色泽晶莹，色为浅琥珀色，醇厚甘甜。
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- <div class="clearfix"></div>  -->
+                </li>
+              </ul>
+              <ul class="" style="display: none;">
+                <li>
+                  <div class="cpxxbox">
+                    <div class="cppic">
+                      <img src="./static/images/gis1.png" style="width: 100%; height: 100%">
+                    </div>
+                    <div class="tabBox">
+                      <table class="cpxx" id="hjxx" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr class="trTitle">
+                            <td class="tdName">主要蜜源植物</td>
+                            <td class="tdCon">干净</td>
+                          </tr>
+                          <tr class="trTitle">
+                            <td class="tdName">与交通主干道距离</td>
+                            <td class="tdCon">干净</td>
+                          </tr>
+                          <tr class="trTitle">
+                            <td class="tdName">蜜源地是否施用农药</td>
+                            <td class="tdCon">干净</td>
+                          </tr>
+                          <tr class="trTitle">
+                            <td class="tdName">蜂场附近水源清洁状况</td>
+                            <td class="tdCon">是</td>
+                          </tr>
+                          <tr class="trTitle">
+                            <td class="tdName">附近是否有化肥厂、农药厂、糖厂</td>
+                            <td class="tdCon">试试</td>
+                          </tr>
+                          <tr class="trTitle">
+                            <td class="tdName">附近是否有垃圾填埋场等污染源</td>
+                            <td class="tdCon">干净</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <!-- <div class="clearfix"></div>  -->
+                </li>
+              </ul>
+            </div>
+            <script type="text/javascript">
+              jQuery("#cpxx").slide({
+                delayTime: 0
+              });
+            </script>
+          </div>
+
+          <!-- 溯源环节 -->
+          <div class="syhjbox">
+            <div class="syhj">
+              <div class="syphoto">
+                <img src="./static/images/gis1.png" style="width: 100%; height: 100%">
+              </div>
+              <div class="titlebox">
+                <h4 class="ccyc">加工环节</h4>
+                <div class="ccyc">
+                  <a href="javascript:;">加工厂名称：奉天顺祥有限责任公司</a>
+                </div>
+                <div class="ccyc">
+                  <a href="javascript:;">加工日期：2017年12月7日</a>
+                </div>
+                <div class="ccyc">
+                  <a href="javascript:;" title="地址：北京市海淀区中关村南大街">地址：北京市海淀区中关村南大街</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="syhj">
+              <div class="syphoto">
+                <img src="./static/images/gis1.png" style="width: 100%; height: 100%">
+              </div>
+              <div class="titlebox">
+                <h4 class="ccyc">加工环节</h4>
+                <div class="ccyc">
+                  <a href="javascript:;">加工厂名称：奉天顺祥有限责任公司</a>
+                </div>
+                <div class="ccyc">
+                  <a href="javascript:;">加工日期：2017年12月7日</a>
+                </div>
+                <div class="ccyc">
+                  <a href="javascript:;" title="地址：北京市海淀区中关村南大街">地址：北京市海淀区中关村南大街</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="syhj" style="margin-right: 0">
+              <div class="syphoto">
+                <img src="./static/images/gis1.png" style="width: 100%; height: 100%">
+              </div>
+              <div class="titlebox">
+                <h4 class="ccyc">加工环节</h4>
+                <div class="ccyc">
+                  <a href="javascript:;">加工厂名称：奉天顺祥有限责任公司</a>
+                </div>
+                <div class="ccyc">
+                  <a href="javascript:;">加工日期：2017年12月7日</a>
+                </div>
+                <div class="ccyc">
+                  <a href="javascript:;" title="地址：北京市海淀区中关村南大街">地址：北京市海淀区中关村南大街</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- 病虫和养殖记录 -->
+        <div class="yzjl">
+          <div class="box" id="yzjl">
+            <div class="hd">
+              <ul>
+                <li class="on">
+                  <a href="#">饲养记录</a>
+                </li>
+                <li class="">
+                  <a href="#">病虫防治</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bd">
+              <ul class="" style="display: block;">
+                <li>
+                  <div class="syjlbox">
+                    <table class="syjl" border="0" cellspacing="0" cellpadding="0">
+                      <thead>
+                        <tr>
+                          <td>日期</td>
+                          <td>饲料类型</td>
+                          <td>饲料名称</td>
+                          <td>使用添加剂</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>糖饲料</td>
+                          <td>白砂糖</td>
+                          <td>否</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>糖饲料</td>
+                          <td>白砂糖</td>
+                          <td>否</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>糖饲料</td>
+                          <td>白砂糖</td>
+                          <td>否</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>糖饲料</td>
+                          <td>白砂糖</td>
+                          <td>否</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>糖饲料</td>
+                          <td>白砂糖</td>
+                          <td>否</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>糖饲料</td>
+                          <td>白砂糖</td>
+                          <td>否</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>糖饲料</td>
+                          <td>白砂糖</td>
+                          <td>否</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </li>
+              </ul>
+              <ul class="" style="display: none;">
+                <li>
+                  <div class="syjlbox">
+                    <table class="syjl" border="0" cellspacing="0" cellpadding="0">
+                      <thead>
+                        <tr>
+                          <td>日期</td>
+                          <td>类型</td>
+                          <td>措施</td>
+                          <td>药品</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>蜂螨</td>
+                          <td>杀螨剂</td>
+                          <td>蜂哈哈</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>蜂螨</td>
+                          <td>杀螨剂</td>
+                          <td>蜂哈哈</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>蜂螨</td>
+                          <td>杀螨剂</td>
+                          <td>蜂哈哈</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>蜂螨</td>
+                          <td>杀螨剂</td>
+                          <td>蜂哈哈</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>蜂螨</td>
+                          <td>杀螨剂</td>
+                          <td>蜂哈哈</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>蜂螨</td>
+                          <td>杀螨剂</td>
+                          <td>蜂哈哈</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>蜂螨</td>
+                          <td>杀螨剂</td>
+                          <td>蜂哈哈</td>
+                        </tr>
+                        <tr>
+                          <td>2018-01-10</td>
+                          <td>蜂螨</td>
+                          <td>杀螨剂</td>
+                          <td>蜂哈哈</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <script type="text/javascript">
+            jQuery("#yzjl").slide({
+              delayTime: 0
+            });
+          </script>
+        </div>
+
+        <!-- 手机查询 -->
+        <div class="sjcx">
+          <div class="box" id="sjcx">
+            <div class="hd">
+              <h3>
+                <a href="#">手机查询</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class="qrbox">
+            <div id="code"></div>
+            <p>扫码查询</p>
+          </div>
+        </div>
+        <script>
+          /**
+           * 渲染二维码
+           */
+          // var content = $element.data('content'),
+          //   size = $element.data('size');
+          // if (!content) {
+          //   content = window.location.href;
+          // }
+          // content = encodeURI(content);
+          new QRCode($('#code').get(0), {
+            text: 'http://app.beeproducttrace.com:82/app/query/?code=110110030011804180031',
+            width: 200,
+            height: 200
+          });
+        </script>
+      </div>
+    </div>
+
+
+    <!-- footer S -->
+    <footer id="footer">
+      <div class="row">
+        <div class="container">
+          <div class="footNav">
+            <a class="tit" href="/wzdb/gywm122" title="关于我们">关于我们</a>
+            |
+            <a class="tit" href="/wzdb/lxwm121" title="联系我们">联系我们</a>
+            |
+            <a class="tit" href="/wzdb/wzsm" title="法律申明">法律申明</a>
+            |
+            <a class="tit" href="/wzdb/wzdt2" title="网站地图">网站地图</a>
+            |
+            <a class="tit" href="/wzdb/bmdh" target="_blank" title="便民电话">便民电话</a>
+          </div>
+          <div class="copyright">
+            <p>
+              北京市蚕业蜂业管理站主持 中国农业科学院信息研究所承办
+              <br>网站标识码5105040004&nbsp; 备案证编号：京ICP备05018972号
+              <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51050402000083">
+                <img src="static/picture/ga.png" border="0">京公网安备 51050402000083号</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

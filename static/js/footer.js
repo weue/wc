@@ -1,0 +1,3 @@
+document.write(
+  '<footer id="footer"><div class="row"><div class="container"><div class="footNav"><a class="tit" href="/wzdb/gywm122" title="关于我们">关于我们</a>          |<a class="tit" href="/wzdb/lxwm121" title="联系我们">联系我们</a>          |<a class="tit" href="/wzdb/wzsm" title="法律申明">法律申明</a>          |<a class="tit" href="/wzdb/wzdt2" title="网站地图">网站地图</a>          |<a class="tit" href="/wzdb/bmdh" target="_blank" title="便民电话">便民电话</a></div><div class="copyright"><p>            北京市蚕业蜂业管理站主持 中国农业科学院信息研究所承办<br>网站标识码5105040004&nbsp; 备案证编号：京ICP备05018972号<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51050402000083"><img src="static/picture/ga.png" border="0">京公网安备 51050402000083号</a></p></div></div></div></footer>'
+)

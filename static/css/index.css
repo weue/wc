@@ -1,0 +1,235 @@
+﻿@charset "utf-8";
+/* ========== row1 ========== */
+.subTab{ overflow: hidden;}
+.subTab .box{ margin-bottom: 0;}
+
+/* ----- 导航首页切换区域 ----- */
+#homeTab .side{ float: right; width: 250px; margin: 0 0 0 20px;}
+
+/* 通知公告 */
+#tzgg .bd{height: 245px; margin-bottom: 20px;}
+#tzgg .bd li{ height: 24px; line-height: 24px; padding-top: 5px; padding-bottom: 5px; transition: all 0.25s ease 0s;}
+#tzgg .bd li:hover{ height: 48px;}
+#tzgg .ft li{ position: relative; float: left; width: 120px;height: 93px; background: url(../images/iconbgblue.png) no-repeat; transition: all 0.4s ease 0s;}
+#tzgg .ft li a{ position: relative; z-index: 2; display: block; line-height: 30px; padding-top: 57px; text-align: center; color: #fff;}
+#tzgg .ft li i{ position: absolute; z-index: 1; top: 10px; left: 50%; margin-left: -25px; width: 50px; height: 50px; background: url(../images/navIcon.png) no-repeat center 0; transition: all 0.4s ease 0s;}
+#tzgg .ft li.zmhd{ float: right; background-image: url(../images/iconbggreen.png);}
+#tzgg .ft li.wsbs i{ background-position: center -272px;}
+#tzgg .ft li.zmhd i{ background-position: center -322px;}
+#tzgg .ft li.on{ filter: alpha(opacity=80);opacity: 0.8;}
+#tzgg .ft li.on i{ transform: rotateY(-180deg);}
+
+/* 焦点图 */
+#focusNews{ float: left; width: 430px; margin-right: 20px;}
+#focusNews .bd .pic{ height: 310px;}
+#focusNews .hd{ position: static;bottom: 0; right: 0; width: 100%;}
+#focusNews .hd li{padding-top: 10px; width: 146px;}
+#focusNews .hd li .pic{ padding: 1px;}
+#focusNews .hd li .pic img{height: 84px;}
+#focusNews .hd .on{ background: url(../images/focuson.png) no-repeat center 4px;}
+#focusNews .hd .on .pic{ background-color: #f50;}
+#focusNews .bd .titleBg{ height: 72px;*height: 40px; background: url(../images/focusbg.png) repeat-x center bottom;}
+
+/* 本地要闻 */
+#bdyw{ margin: 0;}
+#bdyw .bd{ padding: 12px 0 0;}
+
+/* ----- 导航新闻切换区域 ----- */
+#newsTab{ overflow: hidden;}
+#newsTab .side{ float: right; width: 570px; margin: 0 0 0 20px;}
+
+/* 通知公告
+#xwTzgg .bd .txtPicList li{padding-bottom: 15px;margin-bottom: 15px;}
+#xwTzgg .bd .txtPicList li.last{ margin: 0; padding: 0; border: none;}
+#xwTzgg .bd .txtPicList li .title a{color: #333; font-size: 14px;}
+#xwTzgg .bd .txtPicList li .title a:hover{color: #e00;}
+#xwTzgg .bd .txtPicList li .title i{position: relative;top: 3px;left: 5px;}
+#xwTzgg .bd .txtPicList li .title i img:hover{transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1);}
+#xwTzgg .bd .txtPicList li .intro{ padding-top: 2px; line-height: 1.4em;} */
+#xwTzgg .bd .txtPicList li .date{float: left;width: 68px;height: 66px;margin: 0 15px 0 0;text-align: center; padding-top: 3px; line-height: 34px; background-color: #f5f5f5;}
+#xwTzgg .bd .txtPicList li .date b{display: block;line-height: 24px; font-size: 12px; font-weight: normal;}
+#xwTzgg .bd .txtPicList li .date span{ display: block; font-size: 24px; color: #333;}
+
+/* 本地要闻 */
+#xwBdyw .topicList li.n{ padding: 3px 0 4px 15px; border-bottom: 1px dotted #ddd; background-position: 0 -109px;}
+
+/* ----- 导航政务切换区域 ----- */
+#govTab .side{ float: left; width: 370px; margin-right: 20px;}
+
+/* 领导之窗 */
+#ldzc{ margin-bottom: 10px;}
+#ldzc .hd{ line-height: 35px; height: 35px; background: url(../images/sideBg.jpg) no-repeat}
+#ldzc .hd h3{ padding-left: 36px; font-size: 16px; font-weight: bold;}
+#ldzc .hd h3 a{ color: #0f6ad1;}
+#ldzc .bd{ padding: 15px 15px 20px; border: 1px solid #ddd; border-top: none;}
+#ldzc .bd .leaderList li{ overflow: hidden;}
+#ldzc .bd .leaderList .pic{ float: left; margin-right: 20px;}
+#ldzc .bd .leaderList .pic img{ width: 100px; height: auto;}
+#ldzc .bd .leaderList .con{ overflow: hidden;}
+#ldzc .bd .leaderList .con .more{ display: none;}
+#ldzc .bd .leaderList .title, #ldzc .bd .leaderList .works{ margin-bottom: 5px;}
+#ldzc .bd .leaderList .title{ font-size: 20px;}
+#ldzc .bd .leaderList .intro{ overflow: hidden; margin-top: 10px; width: 115px;}
+#ldzc .bd .leaderList .intro a{ display: block; border: 1px #eee solid; height: 30px; line-height: 30px; border-radius: 3px; text-align: center; margin-top: 10px;}
+#ldzc .bd .leaderList .intro a:hover{ background-color: #fcfbfb;}
+.navLeaderList{ margin-top: 10px; overflow: hidden;}
+.navLeaderList .tit{ float: left; margin-right: 10px; height: 30px; line-height: 30px;}
+.navLeaderList ul{ overflow: hidden;}
+.navLeaderList ul li{ width: 19.99%; float: left; height: 30px; line-height: 30px}
+
+/* 公开机制 */
+.zfxxgk{ margin-bottom: 20px;}
+.zfxxgk .hd{ line-height: 35px; height: 35px; background: url(../images/sideBg.jpg) no-repeat}
+.zfxxgk .hd h3{ padding-left: 38px; font-size: 16px; font-weight: bold;}
+.zfxxgk .hd h3 a{ color: #0f6ad1;}
+.xxgkIcons{ overflow: hidden; height: 145px; padding: 15px 10px 23px 10px; border: 1px solid #ddd; border-top: none;}
+.xxgkIcons li{ height: 36px; line-height: 36px; width: 164px; float: left; margin: 0 5px 20px; position: relative; overflow: hidden;}
+.xxgkIcons a{ display: block; padding-left: 46px; position: relative; z-index: 1; background: url(../images/indzwgkicon.png) -3px -7px no-repeat;}
+.xxgkIcons i{ display: block; width: 36px; height: 36px; background: #3a73db; position: absolute; left: 0; top: 0; z-index: 0; border-radius: 2px; -webkit-transition: width 200ms;-o-transition: width 200ms;-moz-transition: width 200ms;transition: width 200ms;}
+.xxgkIcons .li2 a{ background-position: -3px -56px;}
+.xxgkIcons .li2 i{ background-color: #41b9a7;}
+.xxgkIcons .li3 a{ background-position: -3px -104px;}
+.xxgkIcons .li3 i{ background-color: #eb6969;}
+.xxgkIcons .li4 a{ background-position: -3px -157px;}
+.xxgkIcons .li4 i{ background-color: #a448de;}
+.xxgkIcons .li5 a{ background-position: -3px -205px;}
+.xxgkIcons .li5 i{ background-color: #ecb82b;}
+.xxgkIcons .li6 a{ background-position: -3px -254px;}
+.xxgkIcons .li6 i{ background-color: #3ca420;}
+.xxgkIcons li:hover i{ width: 100%;}
+.xxgkIcons a:hover{ text-decoration: none; color: #fff;}
+
+/* 政府文件 */
+#zfwj .bd, #xzsp .bd{height: 215px;}
+#zfwj{ margin-bottom: 10px;}
+
+/* ----- 导航办事切换区域 ----- */
+#workTab .side{ float: right; width: 350px; margin: 0 0 0 20px;}
+
+/* 办事指南 */
+#bszl .hd h3 a{ background: url(../images/indbszlicon.png) no-repeat 0 -322px; padding-left: 42px;}
+
+/* ----- 导航互动切换区域 ----- */
+#interactionTab .side{ float: right; width: 420px; margin: 0 0 0 20px;}
+
+/* 侧栏-链接按钮组 */
+.sideBtns{ margin: 0 -5px 10px; overflow: hidden;}
+.sideBtns li{ width: 33.33%; float: left; overflow: hidden;}
+.sideBtns li a{ margin: 0 5px 10px; display: block; height: 95px; font-size: 16px; color: #fff; text-align: center; padding-top: 25px;}
+.sideBtns li a:hover{ text-decoration: none;}
+.sideBtns li a i{ display: block; width: 50px; height: 50px; margin: 0 auto; background: url(../images/zmhdicon.png) no-repeat center -200px; transition: all .5s;}
+.sideBtns li a:hover i{ transform: rotateY(180deg);}
+.sideBtns li a span{ height: 36px; line-height: 36px; display: block;}
+.sideBtns .li1 a{ background: #4b95e8;}
+.sideBtns .li2 a{ background: #84c819;}
+.sideBtns .li2 a i{ background-position: center -250px;}
+.sideBtns .li3 a{ background: #f9b621;}
+.sideBtns .li3 a i{ background-position: center -300px;}
+.sideBtns .li4 a{ background: #e95b1d;}
+.sideBtns .li4 a i{ background-position: center -350px;}
+.sideBtns .li5 a{ background: #50c583;}
+.sideBtns .li5 a i{ background-position: center -400px;}
+.sideBtns .li6 a{ background: #e16060;}
+.sideBtns .li6 a i{ background-position: center -450px;}
+
+/* 网上调查 */
+#yjzj{ margin-bottom: 20px;}
+
+/* 侧栏-微信微博 */
+#sideWeiBoWeixin{ height: 50px;}
+#sideWeiBoWeixin li{ height: 50px; line-height: 50px; width: 200px; float: left; margin: 0 0 10px; position: relative; background-color: #ebebeb;}
+#sideWeiBoWeixin li.li2{ float: right;}
+#sideWeiBoWeixin a{ display: block; padding-left: 50px; position: relative; z-index: 1; background: url(../images/weiicon.png) 5px 0 no-repeat; text-align: center; font-size: 16px; cursor: pointer; transition: all 0.25s ease 0s;}
+#sideWeiBoWeixin i{ display: block; width: 60px; height: 50px; background: #e95b1d; position: absolute; left: 0; top: 0; z-index: 0; transition: all 0.25s ease 0s;}
+#sideWeiBoWeixin .li2 a{ background-position: 5px -50px;}
+#sideWeiBoWeixin .li2 i{ background-color: #2dce29;}
+#sideWeiBoWeixin .li2 .pic{ display: none; position: absolute; bottom: 60px; left: 50%; margin-left: -75px; width: 150px; box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);}
+#sideWeiBoWeixin .li2 .pic img{ width: 100%;}
+#sideWeiBoWeixin .on a{ text-decoration: none; color: #fff;}
+#sideWeiBoWeixin .on i{ width: 100%;}
+#sideWeiBoWeixin .on .pic{ display: block;}
+
+/* 最新信件 */
+#zxxj{ margin-bottom: 20px;}
+#zxxj .hd{ overflow: hidden;}
+#zxxj .hd .more{ padding: 0 10px 0 0; background: none; font-size: 14px; font-weight: bold;}
+#zxxj .hd .more a i{ width: 20px; height: 40px; float: left; _display: inline; margin-right: 5px; background: url(../images/zmhdicon.png) center -157px no-repeat; transition: all .5s;}
+#zxxj .hd h3 a{ padding-left: 45px; background: url(../images/zmhdicon.png) no-repeat 0 -6px;}
+
+/* 在线访谈 */
+#zxft .hd h3 a{ padding-left: 45px; background: url(../images/zmhdicon.png) no-repeat 0 -56px;}
+#zxft .hd .more{ padding: 0; background: none;}
+#zxft .bd .tCon{ height: 208px; overflow: hidden; background: #f5f5f5; padding: 20px;}
+#zxft .interviewItem{ overflow: hidden;}
+#zxft .interviewItem .interviewPic{ width: 240px; height: 180px; float: left; _display: inline; margin-right: 20px;}
+#zxft .interviewItem .interviewPic img{ width: 240px; height: 180px;}
+#zxft .interviewItem .interviewCon{ overflow: hidden;}
+#zxft .interviewItem .interviewCon .title, #zxft .interviewItem .interviewCon .date, #zxft .interviewItem .interviewCon .guest, #zxft .interviewItem .interviewCon .intro{ margin: 12px 0; overflow: hidden;}
+#zxft .interviewItem .interviewCon .label{float: left; text-align: right; color: #417edc; margin-right: 5px;}
+#zxft .interviewItem .interviewCon .title{ font-size: 16px;}
+#zxft .interviewItem .interviewCon .con{overflow: hidden;}
+#zxft .interviewItem .interviewCon .intro{ margin-bottom: 0;}
+#zxft .interviewItem .interviewLink{ display: none;}
+
+/* ----- 导航区情切换区域 ----- */
+
+/* ========== qqRow1 ========== */
+#qqRow1{ margin-bottom: 20px;}
+
+/* 城市概况 */
+#qqgk{ padding: 40px 30px 20px 190px; background: url(../images/indgkbg.jpg) no-repeat; border: 1px solid #eee; overflow: hidden;}
+#qqgk #focusNews2{ background: url(../images/indgkjdtbg.jpg) no-repeat; padding: 11px; width: 369px;height: 245px; float: left; margin-right: 20px;}
+#qqgk #focusNews2 .hd{ bottom: 30px; right: 30px;}
+#qqgk #focusNews2 .hd li span{ background-color: #fff;}
+#qqgk #focusNews2 .bd, #qqgk #focusNews2 .bd img{ width: 360px;height: 235px; overflow: hidden;}
+#qqgk .qqgkjj{ margin-bottom: 20px; padding: 10px;height: 111px; text-indent: 2em; line-height: 1.8; overflow: hidden;}
+#qqgk .qqgkjj .more{ margin-left: 10px; color: #e30;}
+.qqLink{ margin: 0 -10px; overflow: hidden;}
+.qqLink li{ position: relative; float: left; width: 24.99%; margin-bottom: 10px;}
+.qqLink li a{ margin: 0 10px; display: block; height: 30px; line-height: 30px; text-align: center; border: 1px solid #ddd; transition: all 0.25s ease 0s;}
+.qqLink li a:hover{ background-color: #1a72bd; border-color: #1a72bd; color: #fff;}
+.qqLink li.first{ display: none;}
+
+/* ========== qRow2 ========== */
+#qqRow2{ margin: 0 -10px; overflow: hidden;}
+#qqRow2 .box{ position: relative; float: left; width: 24.99%; overflow: hidden;}
+#qqRow2 .box .pic, #qqRow2 .box .title, #qqRow2 .box .bg, #qqRow2 .box .intro{ margin: 0 10px;}
+#qqRow2 .box .pic{ height: 172px; overflow: hidden;}
+#qqRow2 .box .pic img{ width: 100%;height: auto !important;}
+#qqRow2 .box .title{ position: absolute; top: 132px; left: 0; z-index: 2; right: 0;letter-spacing: 4px; text-align: center; padding: 10px 15px; font-size: 16px; line-height: 20px;}
+#qqRow2 #boxQwjt .title{ top: 112px; padding: 10px 30px;}
+#qqRow2 #boxQwjt .bg{ height: 60px; top: 112px;}
+#qqRow2 .box .title{ overflow: hidden;}
+#qqRow2 .box .title a{ color: #fff;}
+#qqRow2 .box .title a:hover{ color: #ff0;}
+#qqRow2 .box .title li{ float: left; width: 49.9%;}
+#qqRow2 .box .title li.on{ font-weight: bold;}
+#qqRow2 .box .intro{ text-indent: 2em; padding: 14px; border: 1px solid #ddd; border-top: none;}
+#qqRow2 .box .bg{ position: absolute; top: 132px; left: 0; right: 0; z-index: 1; height: 40px; background-color: #000; filter: alpha(opacity=50);opacity: 0.5;}
+
+/* ----- 通栏横幅 ----- */
+#focusAd{ clear: both; margin-top: 20px;}
+#focusAd .hd{ bottom: 0; right: 0;}
+#focusAd .bd li{ height: 100px;}
+#focusAd .bd .titleBg{ display: none;}
+
+/* ========== row2 ========== */
+#row2{ position: relative; z-index: 12; overflow: visible;}
+/* #row2 .container{height: 135px; overflow: visible;} */
+#row2 .container{overflow: visible;}
+
+/* 友情链接 */
+#friendLink{ position: relative; z-index: 2;}
+#friendLink dl{width: 24.99%;float: left;position: relative;}
+#friendLink dl dt{ margin-left: 10px; height: 34px;line-height: 34px;overflow: hidden;border: 1px solid #ccc;background: #fff;position: relative;cursor: pointer;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+#friendLink dl dt i{ right: 12px; top: 50%; margin-top: -2px; border-width: 5px; position: absolute; border-color: transparent; border-style: dashed; border-top-color: #363636;border-top-style: solid; content: "";display: block; font-size: 0;line-height: 0;width: 0;}
+#friendLink dl dt span{ display: block; margin: 0 36px 0 10px; border-right: 1px solid #ccc;}
+#friendLink dd{ margin-left: 10px; bottom: 35px;display: none;position: absolute;left: 0;right: 0;}
+#friendLink ul{ max-height: 389px; border: 1px solid #ccc; background: #fff;overflow-y: scroll;}
+#friendLink li{line-height: 22px; padding: 8px 10px;border-bottom: 1px dotted #ccc;word-break: keep-all;white-space: nowrap;cursor: pointer;}
+#friendLink li:hover{ color: #CD3333; background-color: #f1f1f1}
+#friendLink .last{border-bottom: 0}
+#friendLink .on dt{z-index: 9;border-color: #bbb; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3); -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .3); box-shadow: 0 0 5px rgba(0, 0, 0, .2);}
+#friendLink .on dt i{ border-top-style: none; border-bottom-color: #aaa;border-bottom-style: solid;}
+#friendLink .on dd{ display: block; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3); -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .3); box-shadow: 0 0 5px rgba(0, 0, 0, .2);}
+#friendLink .on dd ul{ border-color: #bbb;}

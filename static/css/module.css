@@ -1,0 +1,153 @@
+﻿@charset "utf-8";
+/*
+	Css for PEL,	ver 1.0
+	CopyRight By Dongyi Network Technology CO.,Ltd Design Center
+
+	所有网站通用模块，可根据自身网站修改
+*/
+#playerMask{ display: none !important;}
+
+/* 通用信息列表DOT */
+.infoList{ text-align: left;}
+.infoList li{height: 35px;line-height: 35px;overflow: hidden;padding-left: 16px;background: url(../images/iconSmall.png) no-repeat 0 -1730px;border-bottom: 1px dotted #ddd; position: relative;}
+.infoList li a{overflow: hidden;}
+.infoList li .date{float: right;color: #999;}
+.infoList li.split{ background: none; border: none;}
+
+/* infoListSpot */
+.infoListSpot li{ background-position: 0 16px;}
+
+/* 排序 */
+.rankList li{ padding-left: 25px;}
+.rankList li .number{ position: absolute; top: 50%; left: 0; margin-top: -10px; width: 20px; height: 20px; line-height: 20px; font-size: 12px; border-radius: 50%; text-align: center; background-color: #eee; font-style: normal;}
+.rankList .hot .number{ background-color: #f6b765; color: #fff;}
+
+/* infoListA */
+.infoListMulti li{ height: auto; line-height: 22px;padding: 8px 0 8px 14px;border-bottom: 1px dotted #ccc;overflow: hidden;background: url(../images/icon.png) 0 19px no-repeat;}
+.infoListMulti .last{border-bottom: 0}
+.infoListMulti .date{color: #999; float: right; margin-left: 5px; font-size: 12px;}
+
+/* 通用带图片的信息列表_普通式 */
+.picList{margin: 0 -10px;}
+.picList li{float: left;width: 24.99%;margin-bottom: 20px;}
+.picList li .pic{margin: 0 10px;background-color: #fff;}
+.picList li .title{margin: 0 10px;}
+.picList li .pic img{width: 100%;height: auto;}
+.picList li .pic a:hover img{filter: alpha(opacity=80);opacity: .8;}
+.picList li .title{padding-top: 5px;height: 40px;line-height: 20px;text-align: center;overflow: hidden;}
+.picList li.noData{ margin-left: 10px;}
+
+/* 内容带图片的信息列表_普通式 - 左图片右文字 */
+.txtPicList li{margin-bottom: 20px; overflow: hidden;}
+.txtPicList li .pic{ float: left;}
+.txtPicList li .pic img{width: 100%;height: auto;}
+.txtPicList li .pic a:hover img{filter: alpha(opacity=80);opacity: .8;}
+.txtPicList li .con{ overflow: hidden;}
+.txtPicList li .title{text-align: left;overflow: hidden;height: 24px;line-height: 24px;}
+.txtPicList li .tit{font-size: 16px;}
+.txtPicList li .intro{ color: #999;line-height: 20px;}
+
+/* 头条图文信息列表_普通式 */
+.topicList li{ height: 24px; line-height: 24px; overflow: hidden;}
+.topicList li.noData{padding-left: 12px;background: url(../images/icon.png) no-repeat 0px -177px;}
+.topicList li .date{ float: right; color: #999;}
+.topicList .t{overflow: hidden;height: auto;margin-bottom: 7px;border-bottom: 1px dotted #ccc;padding-bottom: 10px;}
+.topicList .t .pic{float: left; margin-right: 10px;}
+.topicList .t .title{text-align: left;overflow: hidden;height: 24px;line-height: 24px;}
+.topicList .t .tit{font-size: 16px;}
+.topicList .t .intro{color: #999;text-align: left;font-size: 12px;line-height: 20px;overflow: hidden;padding-top: 8px;text-indent: 2em;}
+.topicList .t .intro .more{float: none; height: 20px; line-height: 20px; padding: 0 4px; color: #cf1b0c; text-indent: 0;}
+.topicList li.n{height: 30px;line-height: 30px;overflow: hidden;background: url(../images/icon.png) no-repeat 0px -112px;padding: 0 5px 0 15px;white-space: nowrap;text-overflow: ellipsis;}
+.topicList li.n .date{float: right;color: #bcbcbc;}
+
+/* topicListSpot */
+.topicListSpot .t .title{ text-align: center;}
+.topicListSpot .t .tit{font-size: 18px; font-weight: bold; color: #cd240f;}
+.topicListSpot .t .intro{ height: 48px;}
+.topicListSpot li.n{ background-position: 0 16px;}
+
+/* 友情链接*/
+.friendLinkList li{height: 35px; line-height: 35px; border-bottom: 1px dotted #ddd;}
+.friendLinkList li a{ display: block; padding-left: 18px;background: url(../images/icon.png) 0 -825px no-repeat;}
+
+/* 焦点图切换  */
+.focus{position: relative;text-align: center;overflow: hidden;}
+.focus .hd{position: absolute;z-index: 11;right: 5px;bottom: 50px;}
+.focus .hd li{float: left;cursor: pointer;font-size: 12px;color: #999;}
+.focus .hd li span{margin-left: 2px;background: #000;display: block;padding: 0 4px; filter: alpha(opacity=50);opacity: 0.5;}
+.focus .hd li.on span{background: #e00;color: #fff; filter: alpha(opacity=100);opacity: 1;}
+.focus .bd img{width: 100%;}
+.focus .bd li{position: relative;}
+.focus .bd .con{position: absolute;bottom: 0;left: 0;width: 100%;}
+.focus .bd .title{position: relative;z-index: 3;}
+.focus .bd .title a{color: #fff;display: block;padding: 10px;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;overflow: hidden; font-size: 16px;}
+.focus .bd .titleBg{position: absolute;right: 0;bottom: 0;left: 0;z-index: 2;height: 40px;background-color: #000;filter: alpha(opacity=60);opacity: .6;}
+
+/* 图标 */
+.focusIcon .hd{bottom: 13px;height: 14px;}
+.focusIcon .hd li span{padding: 0;width: 14px;height: 14px;overflow: hidden;line-height: 100px;border-radius: 10px;}
+.focusIcon .bd .title a{padding-right: 110px;text-align: left;}
+
+/* 图片 */
+.focusPic .hd{width: 250px; right: 10px;}
+.focusPic .hd ul{ margin: 0 -5px; overflow: hidden;}
+.focusPic .hd li{width: 24.9%;}
+.focusPic .hd .pic{ margin: 0 5px; border: 1px solid #fff;}
+.focusPic .hd li img{transition: all 200ms ease 0s;width: 100%; filter: alpha(opacity=85);opacity: .85;}
+.focusPic .hd li.on .pic{border-color: #f50;}
+.focusPic .hd li.on img{filter: alpha(opacity=100);opacity: 1;}
+.focusPic .hd .title{display: none;}
+
+/* 图片+标题 */
+.focusPicTit .hd{width: 100%; bottom: 10px; right: 0;}
+.focusPicTit .hd ul{display: inline-block;*display: inline; zoom: 1;}
+.focusPicTit .hd li{margin: 0 2px; padding: 3px;}
+.focusPicTit .hd li.on{background: rgba(0, 0, 0, 0.7) !important; background: #000; filter: Alpha(opacity=70);color: #fff;border-radius: 34px;}
+.focusPicTit .hd li .pic{ float: left;width: 34px; height: 34px; border-radius: 50%; overflow: hidden;}
+.focusPicTit .hd li img{height: 34px;}
+.focusPicTit .hd li .con{ display: none; float: left; overflow: hidden;}
+.focusPicTit .hd li .title{display: none; float: left; padding: 0 15px 0 5px; line-height: 34px;white-space: nowrap; overflow: hidden;}
+.focusPicTit .hd li .title a{ color: #fff;}
+.focusPicTit .hd li.on .con, .focusPicTit .hd li.on .title{display: block;}
+.focusPicTit .bd .con{display: none;}
+
+/* 广告 */
+.focusAd .hd{right: 0;bottom: 15px;width: 100%;height: 14px;}
+.focusAd .hd ul{display: inline-block;*display: inline; zoom: 1;}
+.focusAd .hd li span{padding: 0;width: 14px;height: 14px;overflow: hidden;line-height: 100px;}
+.focusAd .bd .con{display: none;}
+
+/* 图片光过效果 */
+.pic a{ display: inline-block; *display: inline; zoom: 1; position: relative;transition: all 200ms ease 0s;overflow: hidden;}
+.pic a:hover{filter: alpha(opacity=80);opacity: .8;}
+
+/* url_方块样式分页 */
+.page{ font-size: 0; text-align: center; padding: 25px 0; clear: both; overflow: hidden;}
+.page a, .page span{ font-size: 14px; display: inline-block; _display: inline; zoom: 1; border: 1px solid #E1E1E1; padding: 0px 7px; margin: 0 3px 5px 0; line-height: 25px; height: 25px;}
+.page a:hover, .page span:hover{ border: 1px solid #178A62; text-decoration: none; color: #178A62;}
+.page .current{ background: #178A62; border: 1px solid #178A62; color: #fff !important; font-weight: bold;}
+.page select, .page input{ margin: 0 4px; background: #fff; border: 0 solid #E1E1E1; vertical-align: middle;}
+.page input{ text-align: center; padding: 0 4px; outline: none;}
+
+/*-- 网站地图 --*/
+.siteMap{ padding: 15px 10px; overflow: hidden; zoom: 1;}
+.siteMap .li1{ margin-bottom: 20px;}
+.siteMap .h1{ border: 1px dotted #ccc; background: #fff; background: #f6f6f6;}
+.siteMap .h1 .a1{ display: inline-block; *display: inline; zoom: 1; font: normal 16px/40px "Microsoft YaHei"; _font-weight: bold; color: #0068B7; padding-left: 15px;}
+.siteMap .ul1{ padding: 10px; zoom: 1;}
+.siteMap .li2{ display: inline-block; *display: inline; zoom: 1; height: 30px; line-height: 30px; padding-right: 50px; vertical-align: top;}
+.siteMap .a2{ color: #666; font-size: 12px;}
+.siteMap .ul2{ padding: 0 0 20px 0;}
+.siteMap .li3{ line-height: 18px; display: inline-block; *display: inline; zoom: 1;}
+.siteMap .a3{ color: #999; padding-right: 10px; margin-right: 10px; border-right: 1px solid #ddd;}
+.siteMap .last3 .a3{ border-right: 0;}
+.siteMap #liID41 .li2{ display: block;}
+
+/* 路径导航 */
+.path{margin: 0 0 20px;padding: 5px 0 15px; border-bottom: 1px solid #ddd; list-style: none;}
+.path em{ padding-left: 20px; background: url(../images/iconSmall.png) no-repeat 0 -1678px; font-style: normal;}
+.path a{padding: 0 5px;}
+.path span{padding: 0 5px;color: #666;}
+.path>li{display: inline-block;*display: inline;zoom: 1;text-shadow: 0 1px 0 #fff;}
+.path>li>.divider{padding: 0 5px;color: #ccc;}
+.path>.active{color: #999;}
