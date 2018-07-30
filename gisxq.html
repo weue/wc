@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="application-name" content="北京市蜂蜜质量安全追溯平台" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="renderer" content="webkit" />
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="SiteName" content="北京市蜂蜜质量安全追溯平台" />
+  <meta name="SiteDomains" content="http://app.beeproducttrace.com" />
+  <meta name="SiteIDCode" content="" />
+  <meta name="keywords" content="北京市蜂蜜,蜂蜜质量安全,质量安全追溯平台" />
+  <meta name="description" content="gis详情" />
+  <meta name="ColumnName" content="gis详情" />
+  <meta name="ColumnDescription" content="" />
+  <meta name="ColumnKeywords" content="" />
+  <meta name="ColumnType" content="" />
+
+  <title>gis详情-北京市蜂蜜质量安全追溯平台</title>
+
+  <link href="static/css/module.css" rel="stylesheet" type="text/css" />
+  <link href="static/css/default.css" rel="stylesheet" type="text/css" />
+
+  <link href="static/css/index.css" rel="stylesheet" />
+  <link href="static/css/gisxq.css" rel="stylesheet" />
+  <link href="static/css/jedate.css" rel="stylesheet" />
+
+  <script src="static/js/jquery-1.11.1.js"></script>
+  <script src="static/js/jquery.jedate.min.js"></script>
+  <!-- <script src="static/js/jquery.cookie.js"></script> -->
+
+  <script src="static/js/webcommon.js"></script>
+  <script src="static/js/jquery.superslide.js"></script>
+  <!-- <script src="static/js/stot.js"></script>
+  <script src="static/js/qrcode.min.js"></script> -->
+</head>
+
+<body>
+
+  <div class="wrap">
+    <!-- 顶部 -->
+    <div id="topBar" style="background-color: #178A61; opacity: 0.6;">
+      <div class="siteWidth">
+        <ul class="listTool">
+          <li class="phone">
+            <div class="toolBtn">
+              <a href="javascript:;">
+                <em class="icon"></em>手机版</a>
+            </div>
+          </li>
+          <li class="character">
+            <div class="toolBtn">
+              <a href="javascript:;">
+                <em class="icon"></em>登录</a>
+            </div>
+          </li>
+        </ul>
+        <span class="welcome">欢迎访问北京市蜂蜜质量安全追溯平台！</span>
+      </div>
+    </div>
+    <!-- header S -->
+    <header class="header" id="header">
+
+      <div class="container">
+        <h1 title="北京市蜂蜜质量安全追溯平台" id="logo">
+          <a href="http://www.longmatan.gov.cn">
+            <img src="static/images/logo.png" />
+          </a>
+        </h1>
+        <div class="siteSearchBar" id="searchGroup" id="JS_hideBox1" hideBox>
+          <div class="s-form">
+            <!-- <a class="allSearch " href="/s?ac=a">
+                            <u>溯源APP下载</u>
+                        </a> -->
+            <div class="input-box">
+              <input type="text" class="from-control" id="inputkeyword" placeholder="请输入溯源码" spellcheck="false">
+            </div>
+            <div class="btn-box">
+              <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+              <input type="hidden" id="route" value="s" />
+            </div>
+          </div>
+
+          <!-- <script src="static/js/default-site-search-box.js"></script> -->
+          <script>
+            document.getElementById("inputkeyword").onkeydown = function (e) {
+              e = e || window.event;
+              if (e.keyCode == 13) {
+                gSearch();
+              }
+            };
+
+            function gSearch() {
+              var keyword = document.getElementById('inputkeyword').value;
+              var route = document.getElementById('route').value;
+              if (keyword == '' || keyword == "请输入溯源码") {
+                alert("请输入溯源码");
+              } else if (!/^\d{21}$/.test(keyword)) {
+                alert("请输入正确的溯源码");
+              } else {
+                var siteid = document.getElementById('siteid').value;
+                window.location = '/' + route + '?sid=' + siteid + '&wd=' + encodeURIComponent(keyword);
+              }
+            }
+          </script>
+        </div>
+      </div>
+    </header>
+    <!-- header E -->
+    <nav class="topNav clearfix" id="JS_hideBox2" hideBox>
+      <div class="container">
+        <ul id="mainNav" class="mainNav">
+          <li class="li1" id="li-home">
+            <h3 class="h1">
+              <a class="a1" href='./index.html'>
+                <i></i>首页</a>
+            </h3>
+          </li>
+
+          <li class="li1" id="li-xw">
+            <h3 class="h1">
+              <a class="a1" href="./xw.html">
+                <i></i>新闻动态</a>
+            </h3>
+          </li>
+          <li class="li1 on1" id="li-gis">
+            <h3 class="h1">
+              <a class="a1" href="./gis.html">
+                <i></i>蜂场GIS</a>
+            </h3>
+          </li>
+          <li class="li1" id="li-sy">
+            <h3 class="h1">
+              <a class="a1" href="./sy.html">
+                <i></i>溯源查询</a>
+            </h3>
+          </li>
+          <li class="li1" id="li-zc">
+            <h3 class="h1">
+              <a class="a1" href="./zc.html">
+                <i></i>政策法规</a>
+            </h3>
+          </li>
+          <li class="li1" id="li-tz">
+            <h3 class="h1">
+              <a class="a1" href="./tz.html">
+                <i></i>通知公告</a>
+            </h3>
+          </li>
+          <li class="li1" id="li-gy">
+            <h3 class="h1">
+              <a class="a1" href="./gy.html">
+                <i></i>关于我们</a>
+            </h3>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <!-- content S -->
+    <div id="content">
+      <div class="container">
+        <!-- 位置导航 -->
+        <div class="path">
+          <em>您的位置：</em>
+          <a href="/">首页</a>&gt;
+          <a href="./sy.html">gis详情</a>
+        </div>
+
+        <div class="row">
+          <!-- 蜂场环境 -->
+          <div id="fchj">
+            <div class="box">
+              <div class="hd">
+                <h3>
+                  <a href="#">蜂场环境</a>
+                </h3>
+              </div>
+            </div>
+
+            <div class="pic">
+              <a>
+                <img src="./static/images/gis1.png" />
+              </a>
+              <h3 class="title">
+                <a class="tit" href="#" title="重点溯源单位1">重点溯源单位3333</a>
+              </h3>
+              <span class="titleBg"></span>
+            </div>
+          </div>
+
+
+          <!-- 实时数据 -->
+          <div id="sssj">
+            <div class="box">
+              <div class="hd">
+                <h3>
+                  <a href="#">实时数据</a>
+                </h3>
+              </div>
+            </div>
+
+            <div class="sjbox">
+              <ul>
+                <li class="li1">
+                  <div class="title">
+                    <p>Klux</p>
+                    <p>光照</p>
+                  </div>
+                  <span>8.2</span>
+                </li>
+                <li class="li2">
+                  <div class="title">
+                    <p>°C</p>
+                    <p>土温</p>
+                  </div>
+                  <span>8.2</span>
+                </li>
+                <li class="li3">
+                  <div class="title">
+                    <p>%</p>
+                    <p>土湿</p>
+                  </div>
+                  <span>8.2</span>
+                </li>
+                <li class="li4">
+                  <div class="title">
+                    <p>KPa</p>
+                    <p>大气压力</p>
+                  </div>
+                  <span>8.2</span>
+                </li>
+                <li class="li5">
+                  <div class="title">
+                    <p>°C</p>
+                    <p>气温</p>
+                  </div>
+                  <span>8.2</span>
+                </li>
+                <li class="li6">
+                  <div class="title">
+                    <p>%</p>
+                    <p>湿度</p>
+                  </div>
+                  <span>8.2</span>
+                </li>
+                <li class="li7">
+                  <div class="title">
+                    <p>mV</p>
+                    <p>电能量</p>
+                  </div>
+                  <span>4188.2</span>
+                </li>
+                <li class="li8">
+                  <div class="title">
+                    <p>mm</p>
+                    <p>雨量</p>
+                  </div>
+                  <span>8.2</span>
+                </li>
+                <li class="li9">
+                  <div class="title">
+                    <p>度</p>
+                    <p>风向</p>
+                  </div>
+                  <span>8.2</span>
+                </li>
+                <li class="li10">
+                  <div class="title">
+                    <p>m/S</p>
+                    <p>风速</p>
+                  </div>
+                  <span>8.2</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <!-- 历史数据 -->
+          <div id="lssj">
+            <div class="box">
+              <div class="hd">
+                <h3>
+                  <a href="#">历史数据</a>
+                </h3>
+              </div>
+            </div>
+
+            <div class="titlebox">
+              <div class="pickerbox">
+                <select class="selectpicker">
+                  <option>全部</option>
+                  <option>全部1</option>
+                  <option>全部2</option>
+                </select>
+              </div>
+              <div class="pickerbox">
+                <select class="selectpicker">
+                  <option>实时数据</option>
+                  <option>临时数据</option>
+                  <option>全部数据</option>
+                </select>
+              </div>
+
+              <div class="jewarp">
+                <div class="jeitem">
+                  <label class="jelabel">日期范围</label>
+                  <div class="jeinpbox">
+                    <div class="jeinput" id="testico" placeholder="YYYY-MM-DD"></div>
+                  </div>
+                  <div class="icons jebtns" onclick="$.jeDate('#testico',{trigger:false,range:'　至　',format: 'YYYY-MM-DD'})"></div>
+                </div>
+              </div>
+
+              <button id="selectBtn">数据分析</button>
+              <button id="selectBtn">数据导出</button>
+              <button id="selectBtn">转到列表显示</button>
+              <button id="selectBtn">打印</button>
+
+            </div>
+
+            <!-- 图表 -->
+            <div class="tb">
+              <img src="./static/images/gis1.png" style="width: 100%; height: 100%">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- footer S -->
+    <script src="static/js/footer.js"></script>
+  </div>
+</body>
+
+</html>

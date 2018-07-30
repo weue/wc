@@ -1,0 +1,205 @@
+.picList li .pic img{ display: block; width: 205px; height: 155px;}
+
+/* 走进县市 -----------------------------------------*/
+#zjxsA, #zjxsB{ margin-bottom: 0;}
+#zjxsA .mainContent{ width: 70%; float: left;}
+#zjxsA .side{ width: 28%; margin-left: 0;}
+
+/* 县市概况 */
+.zjxsIntro{ overflow: hidden; border-top: 2px solid #185DAE; margin-bottom: 20px;}
+.zjxsIntro .pic{ width: 230px; float: left; padding: 240px 0 30px 0; background: #195DAE; text-align: center; color: #fff;}
+.zjxsIntro .pic h3{ font-size: 26px;}
+.zjxsIntro .pic h6{ font-size: 12px;}
+.zjxsIntro .con{ overflow: hidden; zoom: 1; padding: 3% 0 0 3%;}
+.zjxsIntro .intro{ text-indent: 2em; line-height: 36px; height: 190px; overflow: hidden;}
+.zjxsIntro .list{ overflow: hidden; margin-right: -3%;}
+.zjxsIntro .list li{ float: left; width: 30.3%; margin: 2.5% 3% 0 0;}
+.zjxsIntro .list a{ display: block; border: 1px solid #E1E1E1; background: #fff; height: 43px; line-height: 43px; text-align: center; font-size: 16px; -webkit-transition: 200ms; -o-transition: 200ms; -moz-transition: 200ms; transition: 200ms;}
+.zjxsIntro .list a:hover{ text-decoration: none; border-color: #ccc; letter-spacing: 2px;}
+
+/* 历史人文 */
+#mainLswh .con{ padding: 0 0 0 3%;}
+#mainLswh .tab dt{ height: 42px; line-height: 42px;}
+#mainLswh .tab dt ul{ overflow: hidden;}
+#mainLswh .tab dt li{ float: left; font-size: 18px;}
+#mainLswh .tab dt li a{ display: block; float: left; padding: 0 25px;}
+#mainLswh .tab dt .on a{ background: #DC3839; color: #fff;}
+#mainLswh .tab dt li a:hover{ text-decoration: none;}
+#mainLswh .tab dd{ text-indent: 2em; padding-top: 3%; line-height: 36px; height: 280px; overflow: hidden;}
+#mainLswh .tab dd p{ margin-bottom: 14px;}
+#mainLswh .tab dd .more{ display: none;}
+#mainLswh{ border-top-color: #DC3839;}
+#mainLswh .pic{ background: #DC3839;}
+.zjxsBox{ margin-bottom: 15px;}
+.zjxsBox .hd{ height: 33px; line-height: 33px; border-bottom: 1px dashed #ccc; padding-bottom: 8px; overflow: hidden;}
+.zjxsBox .hd .more{ font-size: 14px; float: right; color: #666;}
+.zjxsBox .hd h3{ font-size: 20px;/* font-weight:bold; */ padding-left: 44px;}
+.zjxsBox .hd h3 a{ color: #EB7E14;}
+.zjxsBox .bd{ padding: 10px 0; overflow: hidden;}
+
+/* 图说县市 */
+#zjxsB .zjxsBox .hd{ border-bottom: 2px solid #185DAE;}
+#zjxsB .zjxsBox .hd h3{ background-position: 0 -306px;}
+#zjxsB .zjxsBox .hd h3 a{ color: #185DAE;}
+#zjxsB .zjxsBox .bd{ padding: 20px 0 0 0;}
+
+/* 县市视频 */
+#sideXssp .list .pic{ position: relative; overflow: hidden;}
+#sideXssp .list .pic img{ width: 100%; height: 162px; -webkit-transition: 200ms; -o-transition: 200ms; -moz-transition: 200ms; transition: 200ms;}
+#sideXssp .list .pic .ico{ position: absolute; left: 50%; top: 50%; width: 62px; height: 62px; margin-left: -31px; margin-top: -31px; display: block; filter: alpha(opacity=80); opacity: 0.8;}
+#sideXssp .list .pic:hover img{ transform: scale(1.05, 1.05); -moz-transform: scale(1.05, 1.05); -webkit-transform: scale(1.05, 1.05); -o-transform: scale(1.05, 1.05);}
+#sideXssp .list .title{ text-align: center; height: 30px; line-height: 30px; overflow: hidden;}
+
+/* 经济发展 */
+#sideJjfz .hd h3{ background-position: 0 -103px;}
+#sideJjfz .hd h3 a{ color: #4DAD24;}
+#sideJjfz .intro{ text-indent: 2em; line-height: 28px; height: 196px; overflow: hidden;}
+
+/* 自然资源 */
+#sideZrzy .hd h3{ background-position: 0 -204px;}
+#sideZrzy .hd h3 a{ color: #8F5CEC;}
+#sideZrzy .list{ overflow: hidden; margin-right: -3%;}
+#sideZrzy .list li{ vertical-align: top; float: left; width: 30.3%; margin: 3% 3% 0 0;}
+#sideZrzy .list li a{ display: block; text-align: center; border: 1px solid #E1E1E1; height: 36px; line-height: 36px; background: #fff; -webkit-transition: 200ms; -o-transition: 200ms; -moz-transition: 200ms; transition: 200ms;}
+#sideZrzy .list li a:hover{ text-decoration: none; border-color: #ccc; letter-spacing: 2px;}
+
+/* mainBox */
+.mainBox .mHd{position: relative; margin-bottom: 20px; margin-top: 3px; border-bottom: 1px solid #ddd; line-height: 40px; height: 40px;}
+.mainBox .mHd h3{ display: inline-block; *display: inline; zoom: 1; background-color: #2279c4; color: #fff; padding: 0 25px; font-size: 16px;}
+
+/* 文章首页 -----------------------------------------*/
+.newsCenterPage .focusBox{width: 44%; float: left; margin-right: 15px;}
+.newsCenterPage #columnA{height: 248px;}
+.newsCenterPage #columnA .infoList{overflow: hidden; zoom: 1;}
+.newsCenterPage #columnB{margin-bottom: 0}
+.mainBox{overflow: hidden;margin-bottom: 20px;}
+.mainBox #focusNews{float: left;margin: 0 20px 0 0;width: 560px;height: 360px;}
+.mainBox #focusNews .hd{ right: 10px; bottom: 10px;}
+.mainBox #focusNews .hd li span{ background-color: #fff;}
+.mainBox #focusNews .bd .pic img{width: 560px;height: 360px;}
+.mainBox .topicList{overflow: hidden;}
+.mainBox .topicList .t .title{padding-bottom: 10px;line-height: 1.5;font-size: 18px;text-align: center;}
+.boxLoop{margin-left: -20px;overflow: hidden;}
+.boxLoop .box{float: left;margin-left: 20px;width: 570px;}
+.boxLoop .box .bd{padding-bottom: 0;height: 180px;}
+.boxLoop #boxLoop_tpxw{width: 1160px;}
+.boxLoop #boxLoop_tpxw .bd{padding-top: 20px;height: auto;}
+.boxLoop #boxLoop_tpxw .bd li{ width: 19.99%;}
+
+/* 文章列表页 -----------------------------------------*/
+#sideWeiXin .bd{ text-align: center;}
+
+/* 内容带图片的信息列表_图片判断式 */
+.pageTPList li{ padding: 22px 15px; border-bottom: 1px solid #E1E1E1; overflow: hidden;}
+.pageTPList .pic{ float: left; margin-right: 20px; width: 160px;}
+.pageTPList .pic img{ width: 100%; height: auto;}
+.pageTPList .con{ overflow: hidden; zoom: 1;}
+.pageTPList .title{ font-size: 18px; line-height: 30px; overflow: hidden; margin-bottom: 5px;}
+.pageTPList .intro{ margin-bottom: 10px; line-height: 25px; color: #777; max-height: 50px; _height: 50px; overflow: hidden; font-size: 14px;}
+.pageTPList .title a:hover{ text-decoration: none;}
+.pageTPList .intro .more{ display: none;}
+.pageTPList .others{ font-size: 13px; color: #aaa;}
+.pageTPList .others span{ margin-right: 15px;}
+.pageTPList .node{ color: #aaa; margin-right: 15px;}
+.pageTPList .last{ border-bottom: 0; margin-bottom: 0;}
+.pageTPList .on{ background: #fafafa;}
+.pageTPList .bds_more, .pageTPList #bdshare{ vertical-align: middle; background: url(../../Base/img/icon.png) 0 -2142px no-repeat !important; padding: 0 !important; width: 17px !important; height: 17px !important; float: none !important; _display: inline-block !important; padding: 0 !important; margin: 0 !important;}
+.pageTPList .date{ float: right; margin-left: 30px; width: 90px; line-height: 45px; background-color: #f6f6f6; text-align: center;}
+.pageTPList .date b{ display: block; background-color: #549ad1; color: #fff; font-weight: normal;}
+
+/* newsList */
+.newsList li{ font-size: 16px; overflow: hidden; border-bottom: 1px dotted #ccc; height: 46px; line-height: 46px;}
+.newsList li a{ padding-left: 13px; background: url(../../Base/img/icon.png) 0 -115px no-repeat;}
+.newsList .date{ float: right; color: #999; margin: 0 10px;}
+.newsList .node{ color: #999; margin-right: 10px;}
+.newsList em{ color: #f20;}
+
+/* 友情链接列表页 -----------------------------------------*/
+.mBd .friendLinkList{ overflow: hidden;}
+.mBd .friendLinkList li{ float: left; width: 33.33%; border: none;}
+.mBd .friendLinkList li a{ margin-right: 10px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+/* 文章内容页 -----------------------------------------*/
+.articleCon{ text-align: left; padding: 20px;}
+.printArea .title{ font-size: 32px; line-height: 1.5; text-align: center; margin-bottom: 30px; color: #178A61;}
+.printArea .subTitle{ font-size: 20px; color: #555; text-align: center; margin-bottom: 20px;}
+.printArea .property{ font-size: 14px; margin-bottom: 20px; padding: 8px 0;color: #555; border-bottom: 1px solid #ddd; font-size: 12px;}
+.printArea .property span{ padding: 0 5px;}
+.printArea .property span.size{ float: right;}
+.printArea .conTxt{ color: #333; font-size: 16px; line-height: 2; padding: 0 0 20px 0; overflow: hidden;}
+.printArea .conTxt img{ max-width: 800px; height: auto !important;}
+.printArea .conTxt p{ margin-bottom: 20px;}
+.printArea .conTxt a{ color: blue; text-decoration: underline;}
+.printArea .conTxt em{ font-style: italic;}
+.printArea .conTxt ul, .printArea .conTxt ol{ padding-left: 2em;}
+.printArea .conTxt ul li{ zoom: normal; list-style: square; text-indent: 0 !important;}
+.printArea .conTxt ol li{ zoom: normal; list-style: decimal; text-indent: 0 !important;}
+.printArea .conTxt h1{ font-size: 2em; margin: .67em 0;}
+.printArea .conTxt h2{ font-size: 1.5em; margin: .75em 0;}
+.printArea .conTxt h3{ font-size: 1.17em; margin: .83em 0;}
+.printArea .conTxt h5{ font-size: .83em; margin: 1.5em 0;}
+.printArea .conTxt h6{ font-size: .75em; margin: 1.67em 0;}
+.printArea .conTxt h1, .printArea .conTxt h2, .printArea .conTxt h3, .printArea .conTxt h4, .printArea .conTxt h5, .printArea .conTxt h6, .printArea .conTxt b, .printArea .conTxt strong{ font-weight: bolder;}
+.printArea .conTxt table td{ border: 1px solid #888;}
+.printArea .vedioPlayer{ position: relative; z-index: 1500; background: #000; width: 800px; text-align: center; margin: 20px auto; height: 480px;}
+.articleCon .userControl{ font-size: 14px; border-bottom: 1px solid #ddd; overflow: hidden; text-align: left; margin-bottom: 20px; padding: 10px 0;}
+.articleCon .userControl .a{ color: #777; margin: 10px 10px 0 0; float: left;}
+.articleCon .userControl .bdsharebuttonbox{ float: right;}
+.articleCon .page{ padding: 10px 0; text-align: center;}
+.articleCon .qrCode{ color: #999; padding: 15px 0; text-align: center;}
+.articleCon .others{ margin-bottom: 20px;}
+.articleCon .others .prev, .articleCon .others .next{ padding: 5px 0;}
+.articleCon .rankWrap{ overflow: hidden;}
+.articleCon #djph{ float: left; width: 500px; margin-right: 20px;}
+.articleCon #rdtw .bd li{ width: 33.33%;}
+
+/* 图片-列表页 ----------------------------------------- */
+.picPageList{ margin-right: -3%; overflow: hidden; text-align: center;}
+.picPageList li{ border: 1px solid #ddd; float: left; width: 30%; margin: 1.5% 3% 2.5% 0; _display: inline; position: relative; background: #fff; overflow: hidden;}
+.picPageList .pic{ margin: 3%;height: 190px;}
+.picPageList .pic img{ height: auto; width: 100%;}
+.picPageList .title, .picPageList .titleBg{ position: absolute; bottom: 0; left: 0; width: 94%; margin: 3%; display: block; overflow: hidden; line-height: 28px; padding: 5px 0; height: 28px; z-index: 3; color: #fff; -webkit-transition: 400ms; -o-transition: 400ms; -moz-transition: 400ms; transition: 400ms;}
+.picPageList .titleBg{ background: #000; filter: alpha(opacity=60); opacity: 0.6; z-index: 2;}
+.picPageList .title a{ color: #fff; padding: 0 10px; display: block; font-size: 14px;}
+.picPageList li:hover{ border-color: #bbb; -webkit-box-shadow: #eee 2px 2px 0; -moz-box-shadow: #eee 2px 2px 0; box-shadow: #eee 2px 2px 0;}
+.picPageList li:hover .title, .picPageList li:hover .titleBg{ height: 56px;}
+
+/* 视频-列表页 ----------------------------------------- */
+.vedioPageList{ margin-right: -3%; overflow: hidden; text-align: center;}
+.vedioPageList li{ float: left; width: 30.3%; margin: 1.5% 3% 2.5% 0; _display: inline;}
+.vedioPageList .pic{ background: #fff; border: 1px solid #ddd; position: relative;}
+.vedioPageList .pic a{ display: block; margin: 3%; overflow: hidden;}
+.vedioPageList .pic .ico{ position: absolute; left: 50%; top: 50%; width: 62px; height: 62px; margin-left: -31px; margin-top: -31px; background: url(../../Base/img/playButton.png) 0 0 no-repeat; display: none; filter: alpha(opacity=80); opacity: 0.8;}
+.vedioPageList .pic img{ height: auto; width: 100%; -webkit-transition: 400ms; -o-transition: 400ms; -moz-transition: 400ms; transition: 400ms;}
+.vedioPageList .title{ overflow: hidden; padding-top: 5px; line-height: 24px; height: 48px; text-align: left; font-size: 14px; padding-left: 25px; background: url(../../Base/img/icon.png) 0 -621px no-repeat;}
+.vedioPageList .pic:hover{ border-color: #bbb;}
+.vedioPageList .pic:hover img{ transform: scale(1.05, 1.05); -moz-transform: scale(1.05, 1.05); -webkit-transform: scale(1.05, 1.05); -o-transform: scale(1.05, 1.05);}
+
+/* 专题首页 -----------------------------------------*/
+.spePicList{margin: 0 -10px; padding: 0 10px;}
+.spePicList li{float: left;border: none; padding: 10px 0; width: 25%;*width: 24.9%;transition: all 0.2s linear 0s;}
+.spePicList li.on,.spePicList li:hover{ box-shadow: 0 10px 20px rgba(0, 0, 0, .1); transform: translate3d(0px, -2px, 0px);}
+.spePicList li .pic{margin: 0 10px; display: block; overflow: hidden;}
+.spePicList li .pic img{width: 100%;height: 68px !important;}
+.spePicList li .tit{ display: none;}
+
+/* 信息提示页  */
+.Showms{ background: #fff; padding: 3% 5%; overflow: hidden; max-width: 540px; margin: 30px auto;}
+.Showms .top, .Showms .bottom, .Showms .Shadow{ display: none;}
+.Showms .MS{ overflow: hidden; zoom: 1;}
+.Showms .titWrong{ color: #c00; border-bottom: 1px solid #ccc; padding: 5px 0; margin-bottom: 15px; font-size: 18px;}
+.Showms .BUT{ padding: 25px 0 15px 0;}
+.Showms .BUT a{ padding: 0 15px; height: 36px; line-height: 36px; display: inline-block; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; cursor: pointer; margin-right: 15px; background: #eee; border: 1px solid #ccc; font-size: 14px; background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#eee)); background: -moz-linear-gradient(#FFFFFF, #eee); background: -ms-linear-gradient(#FFFFFF, #eee); background: -o-linear-gradient(#FFFFFF, #eee); background: linear-gradient(#FFFFFF, #eee);}
+.Showms .BUT a:hover{ color: #c00; border: 1px solid #aaa; text-decoration: none;}
+
+/* 英文版 */
+.englishPage{ background: url(../../Base/img/englishBodyBg.jpg) center 0 no-repeat #F1F1F1;}
+.englishPage #content .container{ width: 1120px; padding: 30px 40px 20px;}
+.englishPage .header{ height: 325px;}
+.englishPage .topNav,.englishPage #searchGroup{ display: none;}
+.englishPage .path{ font-size: 14px; background: none; margin-bottom: 10px;}
+.englishPage .printArea .conTxt img{ max-width: 1120px;}
+.englishPage .printArea .conTxt{ font-size: 14px; line-height: 40px;}
+.englishPage #footer{ border: none; padding: 25px 0;}
+.englishPage #footer .container{ display: none;}
+.englishPage #footer .copyright{ text-align: center; color: #666;font-size: 14px;}
